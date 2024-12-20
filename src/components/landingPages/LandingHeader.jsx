@@ -40,23 +40,33 @@ const LandingHeader = () => {
       <div className="wrapper flex justify-between items-center gap-10">
         <div className="flex justify-between items-center gap-20 w-full pl-[1rem] lg:pl-0">
           <Link smooth={true} to="banner" className="cursor-pointer">
-            <img src={logoImg} className="h-[3rem] md:h-[3.75rem] scale-125" alt="logo" />
+            <img
+              src={logoImg}
+              className="h-[3rem] md:h-[3.75rem] scale-125"
+              alt="logo"
+            />
           </Link>
           <div className="lg:flex items-center gap-10 hidden">
-            {options.map((option) => (
-              <Link
-                to={`${option.path}`}
-                className="link text-sm"
-                key={option.path}
-                spy={true}
-                smooth={true}
-                offset={-60}
-                duration={1000}
-                activeClass="active-link"
-              >
-                {option.name}
-              </Link>
-            ))}
+            {options.map((option) =>
+              option.name === "Home" ? (
+                <a href="/" className="link text-sm">
+                  Home
+                </a>
+              ) : (
+                <Link
+                  to={`${option.path}`}
+                  className="link text-sm"
+                  key={option.path}
+                  spy={true}
+                  smooth={true}
+                  offset={-60}
+                  duration={1000}
+                  activeClass="active-link"
+                >
+                  {option.name}
+                </Link>
+              )
+            )}
           </div>
         </div>
         <Drawer
@@ -74,20 +84,26 @@ const LandingHeader = () => {
             </button>
           </div>
           <div className="flex flex-col gap-6">
-            {options.map(({ name, path, id }) => (
-              <Link
-                onClick={() => setIsOpen(false)}
-                key={id}
-                className="text-3xl text-white font-medium transition-colors duration-300 link"
-                to={path}
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={1000}
-              >
-                {name}
-              </Link>
-            ))}
+            {options.map(({ name, path, id }) =>
+              name === "Home" ? (
+                <a href="/" className="link text-sm">
+                  Home
+                </a>
+              ) : (
+                <Link
+                  onClick={() => setIsOpen(false)}
+                  key={id}
+                  className="text-3xl text-white font-medium transition-colors duration-300 link"
+                  to={path}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={1000}
+                >
+                  {name}
+                </Link>
+              )
+            )}
           </div>
         </Drawer>
         <div

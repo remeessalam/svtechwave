@@ -33,11 +33,11 @@ const Home = () => {
               IT Services
             </div>
             <h1 className="heading-1">
-              Your Trusted Partner <br /> in Digital Innovation
+              Empowering Your Vision <br /> with Digital Innovation
             </h1>
             <p className="desc">
-              We specialize in delivering cutting-edge IT solutions tailored to
-              meet the unique needs of modern businesses.
+              We provide innovative IT solutions designed to address the
+              specific challenges of today's businesses.
             </p>
             <Link to="/contact-us" className="primary-btn mt-2">
               Get Started
@@ -57,21 +57,21 @@ const Home = () => {
           <div data-aos="fade-right" className="flex h-full flex-col gap-7">
             <div className="flex flex-col gap-7 text-center lg:text-start">
               <h2 className="heading-2">
-                Enhancing Operations with Advanced Technology.
+                Optimizing Processes Through Innovative Technology.
               </h2>
               <p className="desc">
-                At VKM Techno Solutions, we take immense pride in delivering
-                top-notch digital solutions that cater to the evolving needs of
-                today’s dynamic business environment. We are passionate about
-                innovation, creativity, and excellence, and these principles
-                guide every project we undertake. As a trusted technology
-                partner, we are dedicated to transforming your bold ideas into
-                reality through cutting-edge technology and innovative digital
-                strategies. Our core expertise spans across Web Development, App
-                Development, UX/UI Design, Chatbot Development, Machine Learning
-                Solutions, and Game Development—empowering businesses to not
-                just survive but to thrive and grow in the fast-paced,
-                competitive digital landscape.
+                At SV TECH WAVE, we are proud to deliver exceptional digital
+                solutions designed to meet the ever-changing demands of today’s
+                dynamic business landscape. Guided by our passion for
+                innovation, creativity, and excellence, we bring your bold ideas
+                to life with cutting-edge technology and forward-thinking
+                strategies. As a trusted technology partner, our mission is to
+                empower businesses to thrive and grow in an increasingly
+                competitive digital world. From concept to execution, we
+                specialize in transforming your vision into reality, leveraging
+                expertise in Web Development, App Development, UX/UI Design,
+                Chatbot Development, Machine Learning Solutions, and Game
+                Development.
               </p>
             </div>
             <div className="flex gap-5 mt-4 justify-center lg:justify-start">
@@ -105,10 +105,10 @@ const Home = () => {
             Reliable IT Support for Your Business
           </h1>
           <p className="desc max-w-[50rem] mx-auto">
-            At VKM Techno Solutions, we understand that in today’s digital-first
-            world, your website is more than just an online presence—it’s the
-            heart of your brand’s identity, a vital business tool, and often the
-            first touchpoint for potential customers. In an era where first
+            At SV TECH WAVE, we understand that in today’s digital-first world,
+            your website is more than just an online presence—it’s the heart of
+            your brand’s identity, a vital business tool, and often the first
+            touchpoint for potential customers. In an era where first
             impressions matter more than ever, having a well-designed, fast, and
             responsive website is crucial to your business success. That’s why
             our website development services go beyond the basics—we aim to

@@ -27,21 +27,36 @@ const AboutUs = () => {
       </div>
       <div className="py-[5rem] text-white text-center">
         <div className="wrapper flex flex-col items-center gap-5 mb-[5rem]">
-          <div data-aos='fade-up' className="gradient-rounded-text-box">About Us</div>
-          <h2 data-aos='fade-up' className="heading-2">Magic Behind Our IT Solutions</h2>
-          <p data-aos='fade-up' className="desc max-w-[50rem]">
-            We begin by conducting a comprehensive needs assessment to
-            understand your specific requirements, challenges, and goals.
+          <div data-aos="fade-up" className="gradient-rounded-text-box">
+            About Us
+          </div>
+          <h2 data-aos="fade-up" className="heading-2">
+            Magic Behind Our IT Solutions
+          </h2>
+          <p data-aos="fade-up" className="desc max-w-[50rem]">
+            We are a forward -looking technology company that is required to
+            provide cutting -edge solutions in software development, artificial
+            intelligence, Internet of Things and other aspects.
+            <br />
+            <br />
+            Focusing on innovation, we have collaborated with customers to
+            create customized solutions to solve challenges in the real world.
+            Our team of experts has extensive experience in cloud computing,
+            mobile application development, and data analytics to ensure your
+            business stays ahead of the competition.
           </p>
           <div className="pt-[3rem]">
             <div className="flex flex-col gap-5">
               <div className="flex flex-col-reverse sm:grid text-start grid-cols-2 gap-5 max-w-5xl mx-auto">
-                <div data-aos='fade-right' className="rounded-xl p-5 bg-gradient-to-r from-primary/60 to-primary/80">
+                <div
+                  data-aos="fade-right"
+                  className="rounded-xl p-5 bg-gradient-to-r from-primary/60 to-primary/80"
+                >
                   <h6 className="font-bold text-lg font-raleway">
                     Innovation at Heart
                   </h6>
                   <p className="desc mt-2">
-                    At VKM Techno Solutions, innovation is our driving force. We
+                    At SV TECH WAVE, innovation is our driving force. We
                     constantly explore emerging technologies and trends to
                     create future-ready solutions that push the boundaries of
                     what’s possible. We aim to deliver solutions that not only
@@ -49,7 +64,7 @@ const AboutUs = () => {
                     tomorrow.
                   </p>
                 </div>
-                <div data-aos='fade-left' className="h-full flex items-center">
+                <div data-aos="fade-left" className="h-full flex items-center">
                   <img
                     src={aboutUsGridImg1}
                     alt="Innovation at Heart"
@@ -58,14 +73,17 @@ const AboutUs = () => {
                 </div>
               </div>
               <div className="flex flex-col sm:grid text-start grid-cols-2 gap-5 max-w-5xl mx-auto">
-                <div data-aos='fade-right' className="h-full flex items-center">
+                <div data-aos="fade-right" className="h-full flex items-center">
                   <img
                     src={aboutUsGridImg2}
                     alt="Client-Centric Approach"
                     className="h-full max-h-[15rem] my-auto object-contain mx-auto"
                   />
                 </div>
-                <div data-aos='fade-left' className="rounded-xl p-5 bg-gradient-to-r from-secondary/60 to-secondary/80">
+                <div
+                  data-aos="fade-left"
+                  className="rounded-xl p-5 bg-gradient-to-r from-secondary/60 to-secondary/80"
+                >
                   <h6 className="font-bold text-lg font-raleway">
                     Client-Centric Approach
                   </h6>
@@ -80,7 +98,10 @@ const AboutUs = () => {
                 </div>
               </div>
               <div className="flex flex-col-reverse sm:grid text-start grid-cols-2 gap-10 sm:gap-5 max-w-5xl mx-auto">
-                <div data-aos='fade-right' className="rounded-xl p-5 bg-gradient-to-r from-primary/60 to-primary/80">
+                <div
+                  data-aos="fade-right"
+                  className="rounded-xl p-5 bg-gradient-to-r from-primary/60 to-primary/80"
+                >
                   <h6 className="font-bold text-lg font-raleway">
                     Commitment to Excellence
                   </h6>
@@ -92,7 +113,7 @@ const AboutUs = () => {
                     we exceed expectations and industry standards at every turn.
                   </p>
                 </div>
-                <div data-aos='fade-left' className="h-full flex items-center">
+                <div data-aos="fade-left" className="h-full flex items-center">
                   <img
                     src={aboutUsGridImg3}
                     alt="Commitment to Excellence"
@@ -101,29 +122,35 @@ const AboutUs = () => {
                 </div>
               </div>
               <div className="flex flex-col sm:grid text-start grid-cols-2 gap-5 max-w-5xl mx-auto">
-                <div data-aos='fade-right' className="h-full flex items-center">
+                <div data-aos="fade-right" className="h-full flex items-center">
                   <img
                     src={aboutUsGridImg4}
                     alt="Innovation with Purpose"
                     className="h-full max-h-[15rem] my-auto object-contain mx-auto"
                   />
                 </div>
-                <div data-aos='fade-left' className="rounded-xl p-5 bg-gradient-to-r from-secondary/60 to-secondary/80">
+                <div
+                  data-aos="fade-left"
+                  className="rounded-xl p-5 bg-gradient-to-r from-secondary/60 to-secondary/80"
+                >
                   <h6 className="font-bold text-lg font-raleway">
                     Innovation with Purpose
                   </h6>
                   <p className="desc mt-2">
-                    Technology without purpose is meaningless. At VKM Techno
-                    Solutions, we believe in leveraging technology to create
-                    meaningful impact—whether it’s streamlining processes,
-                    enhancing customer experiences, or driving growth. Our
-                    solutions are designed to transform businesses, help them
-                    scale, and lead in their industries.
+                    Technology without purpose is meaningless. At SV TECH WAVE,
+                    we believe in leveraging technology to create meaningful
+                    impact—whether it’s streamlining processes, enhancing
+                    customer experiences, or driving growth. Our solutions are
+                    designed to transform businesses, help them scale, and lead
+                    in their industries.
                   </p>
                 </div>
               </div>
               <div className="flex flex-col-reverse sm:grid text-start grid-cols-2 gap-5 max-w-5xl mx-auto">
-                <div data-aos='fade-right' className="rounded-xl p-5 bg-gradient-to-r from-primary/60 to-primary/80">
+                <div
+                  data-aos="fade-right"
+                  className="rounded-xl p-5 bg-gradient-to-r from-primary/60 to-primary/80"
+                >
                   <h6 className="font-bold text-lg font-raleway">
                     End to End Solutions
                   </h6>
@@ -136,7 +163,7 @@ const AboutUs = () => {
                     experiences for your customers.
                   </p>
                 </div>
-                <div data-aos='fade-left' className="h-full flex items-center">
+                <div data-aos="fade-left" className="h-full flex items-center">
                   <img
                     src={aboutUsGridImg5}
                     alt="End to End Solutions"
@@ -149,10 +176,12 @@ const AboutUs = () => {
         </div>
         <UnlockEfficiency />
         <div className="wrapper mt-[5rem]">
-          <h2 data-aos='fade-up' className="heading-2">Why Choose VKM Techno Solutions?</h2>
+          <h2 data-aos="fade-up" className="heading-2">
+            Why Choose SV TECH WAVE?
+          </h2>
           <ul className="mt-[2rem] flex flex-col gap-3 list-disc list-outside text-start">
             {whyChooseUsContent.map((item) => (
-              <li data-aos='fade-up' key={item.id} className="text-[#CF00FE]">
+              <li data-aos="fade-up" key={item.id} className="text-[#CF00FE]">
                 <span className="font-raleway font-bold">{item.title}:</span>{" "}
                 <span className="desc text-white ml-1">{item.desc}</span>
               </li>
@@ -161,7 +190,7 @@ const AboutUs = () => {
         </div>
       </div>
       <OurServices length={3} />
-      <Testimonials/>
+      <Testimonials />
     </>
   );
 };

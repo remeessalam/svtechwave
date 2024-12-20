@@ -44,7 +44,7 @@ export const LandingPage = ({ page }) => {
             <h1 className="heading-1 text-white">
               {isWebDevelopment
                 ? "Creating Websites that Grow with Your Business"
-                : "Your Ideas, Perfectly Engineered into Apps"}
+                : "Igniting innovation through artificial intelligence, apps and mores"}
             </h1>
             <p className="text-white/90 desc">
               We specialize in delivering cutting-edge IT solutions tailored to
@@ -136,10 +136,10 @@ export const LandingPage = ({ page }) => {
             Design & Revolution
           </h1>
           <p data-aos="fade-up" className="desc max-w-[50rem] mx-auto">
-            At VKM Techno Solutions, we understand that in today’s digital-first
-            world, your website is more than just an online presence—it’s the
-            heart of your brand’s identity, a vital business tool, and often the
-            first touchpoint for potential customers. In an era where first
+            At SV TECH WAVE, we understand that in today’s digital-first world,
+            your website is more than just an online presence—it’s the heart of
+            your brand’s identity, a vital business tool, and often the first
+            touchpoint for potential customers. In an era where first
             impressions matter more than ever, having a well-designed, fast, and
             responsive website is crucial to your business success. That’s why
             our website development services go beyond the basics—we aim to

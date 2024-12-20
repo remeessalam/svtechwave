@@ -54,17 +54,16 @@ export {
 
 // company details
 export const companyDetails = {
-  phone: "+91-9715265678",
-  whatsapp: "+91-9715265678",
-  email: "support@vkmtechnosolutions.com",
+  phone: "+91-9505066888",
+  whatsapp: "+91-9505066888",
+  email: "example@xyz.com",
   address:
-    "S F NO 395/1B1A1, LR Nagar, V Kota Road, Pernambut, 635810, Vellore District, Tamil Nadu, India",
-  twitter: "https://x.com/VKMTechnoSoln",
-  linkedin: "https://www.linkedin.com/company/vkm-techno-solutions",
-  instagram: "https://www.instagram.com/vkmtechnosolutions/",
-  facebook: "https://www.facebook.com/profile.php?id=61566531176974",
+    "3-72/1,BANK COLONY ,SARPAVARAM, KAKINADA-ANDHRA PRADESH-533005,INDIA.",
+  twitter: "",
+  linkedin: "",
+  instagram: "",
+  facebook: "",
 };
-
 
 // website routes
 export const routes = [
@@ -87,6 +86,11 @@ export const routes = [
     name: "Contact Us",
     path: "/contact-us",
     component: <ContactUs />,
+  },
+  {
+    name: "Blogs",
+    path: "#",
+    // component: <ContactUs />,
   },
 ];
 
@@ -189,6 +193,72 @@ export const appDevelopmentServices = [
 
 // all services
 export const allServices = [
+  {
+    id: 1,
+    title: "User Experience/User Interface Design",
+    desc: "At SVTECHWAVE, we design intuitive UI/UX solutions for digital products, enhancing user experiences while achieving business goals.",
+    detailContent:
+      "At SVTECHWAVE, we prioritize creating user interfaces that not only look great but also offer a seamless and engaging user experience. Our design process begins with a deep understanding of user behaviors and expectations, ensuring every element aligns with their needs. We leverage cutting-edge tools and methodologies to design intuitive, responsive, and accessible interfaces.\n\nOur UI/UX design services extend across websites, mobile apps, and custom software, focusing on crafting experiences that captivate users and deliver measurable results. Whether it's designing a sleek e-commerce platform or a data-rich enterprise dashboard, our team ensures a perfect blend of aesthetics and functionality. By integrating user feedback into our iterative design process, we create products that not only meet but exceed user expectations, enhancing satisfaction and driving business growth.\n\nIn addition, our expertise in responsive design ensures your digital products perform optimally across devices and screen sizes. From wireframing and prototyping to final deployment, we prioritize collaboration and innovation, ensuring your brand's identity is reflected in every pixel.",
+  },
+  {
+    id: 2,
+    title: "Chatbot Development",
+    desc: "We build intelligent chatbots to enhance customer interactions, automate tasks, and ensure seamless communication.",
+    detailContent:
+      "In today’s fast-paced digital landscape, businesses are continually seeking innovative ways to enhance customer engagement and streamline operations. At SVTECHWAVE, we recognize the transformative potential of chatbot technology. Our chatbot development services empower organizations to leverage artificial intelligence to deliver real-time, personalized interactions that improve customer satisfaction while optimizing resource allocation.\n\nChatbots are sophisticated programs designed to simulate conversation with users. They can operate on various platforms, including websites, mobile apps, and social media channels, providing customers with immediate responses to their inquiries. This instant accessibility significantly enhances the user experience, allowing businesses to engage with their audience 24/7 without the constraints of traditional customer service hours. With chatbots, customers can obtain information, place orders, and receive support at any time, eliminating the frustration of long wait times and enhancing overall satisfaction.\n\nOne of the key benefits of implementing chatbots is their ability to handle a multitude of inquiries simultaneously. Unlike human agents, who can only assist one customer at a time, chatbots can interact with countless users concurrently. This scalability is particularly advantageous for businesses during peak times or promotional events when customer inquiries often surge. By automating routine tasks and frequently asked questions, chatbots free up human agents to focus on more complex issues, ultimately improving efficiency across the organization.",
+  },
+  {
+    id: 3,
+    title: "IoT Solutions",
+    desc: "Transform businesses with IoT solutions, connecting physical devices to digital systems for real-time insights and innovation.",
+    detailContent:
+      "At SVTECHWAVE, we are driving the revolution of connected ecosystems through cutting-edge IoT solutions. Our expertise lies in seamlessly integrating physical devices with digital systems, enabling businesses to unlock real-time data insights and make intelligent decisions. Whether it's smart factories, connected healthcare systems, or IoT-enabled consumer products, we design solutions tailored to meet the unique needs of our clients.\n\nIoT technology empowers businesses to monitor operations remotely, automate processes, and proactively address issues before they escalate. By collecting and analyzing vast amounts of data from interconnected devices, businesses can optimize workflows, reduce costs, and enhance customer experiences. Our IoT services also include advanced security measures to protect your connected systems from vulnerabilities, ensuring seamless and secure operations.\n\nFurthermore, we assist businesses in leveraging IoT for predictive maintenance, energy management, and supply chain optimization. With our end-to-end solutions, your organization can transform its operations into a smart, efficient, and connected ecosystem.",
+  },
+  {
+    id: 4,
+    title: "Artificial Intelligence Development",
+    desc: "Innovative AI development services to automate tasks, enhance decision-making, and transform business operations.",
+    detailContent:
+      "At SVTECHWAVE, our Artificial Intelligence (AI) development services focus on delivering groundbreaking solutions that transform businesses across industries. From predictive analytics and computer vision to natural language processing, our AI-powered solutions enable businesses to automate complex processes, uncover new opportunities, and improve operational efficiency.\n\nWith AI, businesses can process vast amounts of data quickly, enabling real-time decision-making that was once impossible. Our tailored AI solutions cater to industries such as healthcare, finance, retail, and manufacturing, addressing unique challenges with precision. By integrating AI into your operations, we help you reduce costs, improve customer satisfaction, and gain a competitive edge in today’s data-driven world.\n\nIn addition, our AI expertise extends to developing intelligent recommendation systems, fraud detection tools, and advanced customer sentiment analysis. These capabilities empower businesses to personalize their services and improve operational accuracy, ensuring sustainable growth and innovation.",
+  },
+  {
+    id: 5,
+    title: "Cloud Computing Services",
+    desc: "Comprehensive cloud computing solutions for scalability, flexibility, and operational optimization tailored to your needs.",
+    detailContent:
+      "Cloud computing has become a cornerstone of modern business operations, and at SVTECHWAVE, we specialize in providing scalable and secure cloud solutions tailored to your unique needs. Whether you're migrating legacy systems to the cloud, optimizing your infrastructure, or adopting multi-cloud strategies, we ensure a seamless transition and robust performance.\n\nOur cloud services empower businesses with flexibility, enabling them to scale resources up or down based on demand. This agility translates to cost savings, enhanced collaboration, and faster time-to-market for new products. Additionally, we prioritize security and compliance, implementing advanced measures to protect your data and maintain regulatory standards. With our cloud expertise, your organization can unlock the full potential of digital transformation.\n\nWe also offer disaster recovery planning, data storage optimization, and cloud-native application development to ensure your business remains resilient, innovative, and future-proof.",
+  },
+  {
+    id: 6,
+    title: "Web Development (Full Stack)",
+    desc: "End-to-end full-stack web development for dynamic, high-performance websites and web applications.",
+    detailContent:
+      "At SVTECHWAVE, we excel in delivering comprehensive full-stack web development services that cover every aspect of the development process. Our team of skilled developers works on both the front-end and back-end, creating web applications that are not only visually appealing but also robust and scalable.\n\nOur development process involves using the latest frameworks and technologies to ensure optimal performance and responsiveness. Whether it's a sleek single-page application or a complex enterprise solution, we tailor our services to meet your business objectives. From conceptualization to deployment, our expertise ensures that your website or application delivers an exceptional user experience and drives measurable results.\n\nAdditionally, we specialize in creating API-driven architectures, progressive web apps, and feature-rich e-commerce platforms. These solutions provide enhanced functionality and ensure that your digital presence remains competitive and innovative.",
+  },
+  {
+    id: 7,
+    title: "Mobile App Development",
+    desc: "Custom mobile apps that are user-centric, feature-rich, and scalable for iOS, Android, or cross-platform solutions.",
+    detailContent:
+      "SVTECHWAVE offers end-to-end mobile app development services that focus on delivering feature-rich and user-friendly applications for various platforms, including iOS, Android, and cross-platform solutions. Our process begins with understanding your business goals and user needs to design apps that are not only visually appealing but also highly functional.\n\nWe leverage the latest development frameworks and technologies to build apps that are secure, scalable, and easy to maintain. Whether you're looking to launch a consumer-facing app or an internal enterprise solution, our team ensures that the final product enhances user engagement and achieves your strategic objectives. From prototyping to post-launch support, we are with you every step of the way.\n\nOur expertise also includes integrating advanced features such as AI-driven chat, push notifications, and seamless payment gateways. These additions ensure that your app delivers a superior user experience and stands out in competitive markets.",
+  },
+  {
+    id: 8,
+    title: "Custom Software Development",
+    desc: "Tailored software solutions to address unique business challenges and drive innovation with scalability and high performance.",
+    detailContent:
+      "At SVTECHWAVE, we understand that every business is unique, which is why we offer custom software development services tailored to your specific needs. Our expertise spans various industries, enabling us to create solutions that address complex challenges, improve efficiency, and unlock new growth opportunities.\n\nOur development process involves close collaboration with your team to understand your goals and translate them into a scalable, high-performance software solution. Whether it's an ERP system, a customer-facing portal, or a proprietary application, we ensure that the final product aligns with your operational requirements and delivers measurable value.\n\nIn addition, we incorporate advanced technologies such as AI, blockchain, and IoT to develop innovative software solutions. These integrations enable businesses to stay ahead of the curve and adapt to evolving market demands.",
+  },
+  {
+    id: 9,
+    title: "Data Analytics & Business Intelligence",
+    desc: "Advanced data analytics and BI solutions to uncover insights, optimize processes, and drive data-informed decision-making.",
+    detailContent:
+      "In a data-driven world, making sense of vast amounts of information is crucial for success. At SVTECHWAVE, our data analytics and business intelligence services are designed to transform raw data into actionable insights that empower informed decision-making.\n\nWe utilize advanced analytical frameworks and cutting-edge tools to uncover patterns, trends, and opportunities hidden within your data. Whether it's predictive modeling, performance monitoring, or customer segmentation, our solutions help businesses optimize processes and improve outcomes. With our BI dashboards and reporting tools, decision-makers gain real-time access to critical information, fostering agility and innovation across the organization.\n\nAdditionally, we specialize in big data solutions, machine learning models, and automated reporting systems. These enhancements enable businesses to harness the full power of their data, driving growth and achieving long-term success.",
+  },
+];
+
+export const Servicess = [
   {
     id: 1,
     title: "Web Development",

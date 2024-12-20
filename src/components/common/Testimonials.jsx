@@ -10,17 +10,75 @@ import {
 const reviews = [
   {
     id: 1,
+    title: "Development of Artificial Intelligence",
+    desc: "SVTECHWAVE changed our business using its cut AI solution. Their team not only understood our needs, but also provided customized AI systems that significantly improved our customer experience and operational efficiency. The results speak for themselves – we saw significant increases in productivity and customer satisfaction.",
+    name: "John Smith",
+    role: "CEO, XYZ Company",
     profileImg: profileImg1,
-    name: "Brian Manuel",
-    role: "CEO of Innovative Tech Corp",
-    desc: "“The team's dedication and proactive approach ensured a smooth transition, and their ongoing support has been invaluable. I highly recommend Portal for anyone looking to leverage technology to achieve business goals.”",
   },
   {
     id: 2,
+    title: "Web Development (Full Stack)",
+    desc: "Working with SVTECHWAVE for our complete web development was the game election. From the initial design to the final implementation, they delivered a robust, scalable and visually fantastic site that perfectly represents our brand. Their team was communicative and went beyond to ensure that everything met our needs.",
+    name: "Emily Roberts",
+    role: "Marketing Director, ABC Ltd.",
     profileImg: profileImg2,
-    name: "Jane Smith",
-    role: "Director of Operations at Green Future Ltd",
-    desc: "“Their thorough risk assessment and tailored security strategy not only protected our data but also enhanced our overall security posture. The team's professionalism and deep knowledge of cybersecurity were impressive.”",
+  },
+  {
+    id: 3,
+    title: "Mobile Application Development",
+    desc: "The mobile application developed by SVTECHWAVE exceeded our expectations. Their team understood our goals and created an intuitive, feature-rich application that improved our customer engagement and streamlined operations. We have received great feedback from our users, and the app has become a key tool for our business.",
+    name: "Mark Thompson",
+    role: "Chief Technology Officer, Ecom Enterprises",
+    profileImg: profileImg1,
+  },
+  {
+    id: 4,
+    title: "Custom Software Development",
+    desc: "SVTECHWAVE provided a custom software solution that perfectly fit our business model. The application they developed simplified our internal processes and increased efficiency and accuracy. They were flexible and responsive to our changing needs throughout the project. We are very pleased with the results.",
+    name: "Sarah Lee",
+    role: "Chief Operating Officer, Tech Solutions Inc.",
+    profileImg: profileImg2,
+  },
+  {
+    id: 5,
+    title: "Cloud Computing Services",
+    desc: "SVTECHWAVE’s cloud computing services helped us seamlessly migrate our operations to the cloud, improving both flexibility and cost-efficiency. Their team provided expert guidance throughout the process to ensure the slightest interruption and maximum benefits. With the growth of the business, we can easily expand our resources now.",
+    name: "David Miller",
+    role: "IT Director, Global Logistics",
+    profileImg: profileImg1,
+  },
+  {
+    id: 6,
+    title: "User Experience/User Interface Design",
+    desc: "SVTECHWAVE has transformed the user experience of our platform with their outstanding UX/UI design services. Their team worked closely with us to understand our users' needs and delivered a beautiful, user-friendly interface that significantly increased engagement and user retention. We couldn’t have asked for a better partner.",
+    name: "Anna Williams",
+    role: "Product Manager, Fintech Innovations",
+    profileImg: profileImg2,
+  },
+  {
+    id: 7,
+    title: "Chatbot Development",
+    desc: "The chatbot developed by SVTECHWAVE is a game changer for our customer service operations. It’s intuitive, responsive, and has helped reduce our customer service workload by efficiently handling common queries. Our customers love the immediate support it provides, and it has improved our overall service quality.",
+    name: "Lucas Green",
+    role: "Head of Customer Support, Retail Dynamics",
+    profileImg: profileImg1,
+  },
+  {
+    id: 8,
+    title: "Development of IoT (IoT)",
+    desc: "The development service of SVTECHWAVE IoT allows us to introduce efficient intelligent system factory production systems. Integration of IoT sensors and data analysis has led to greater operating efficiency, real-time monitoring and expected maintenance functions. This is a huge leap forward for our company.",
+    name: "Carlos Sanchez",
+    role: "Operations Manager, Smart Manufacturing Co.",
+    profileImg: profileImg1,
+  },
+  {
+    id: 9,
+    title: "Data Analytics and Business Intelligence",
+    desc: "SVTECHWAVE's data analytics and business intelligence services give us the insights we need to optimize our marketing strategies and improve decision-making. Their team not only helped us analyze historical data, but also implemented predictive analytics that drive our future strategy. Their expertise has truly unleashed the power of our data.",
+    name: "Olivia Harris",
+    role: "Director of Strategy, Market Insights Group",
+    profileImg: profileImg2,
   },
 ];
 
@@ -91,7 +149,10 @@ const Testimonials = () => {
         <div className="gradient-rounded-text-box" data-aos="fade-up">
           Testimonials
         </div>
-        <h2 className="heading-2 text-white mb-2 text-center" data-aos="fade-up">
+        <h2
+          className="heading-2 text-white mb-2 text-center"
+          data-aos="fade-up"
+        >
           Our Clients' Experiences
         </h2>
         <div ref={sliderRef} className="keen-slider" data-aos="fade-up">
@@ -106,7 +167,7 @@ const Testimonials = () => {
                   <img
                     src={item.profileImg}
                     alt={item.name}
-                    className="h-full w-[2rem] rounded-full object-cover"
+                    className="h-[2rem] w-[2rem] rounded-full object-cover"
                   />
                   <div className="flex flex-col h-full">
                     <p className="font-medium">{item.name}</p>
