@@ -86,7 +86,10 @@ const LandingHeader = () => {
           <div className="flex flex-col gap-6">
             {options.map(({ name, path, id }) =>
               name === "Home" ? (
-                <a href="/" className="link text-sm">
+                <a
+                  href="/"
+                  className="text-3xl text-white font-medium transition-colors duration-300 link"
+                >
                   Home
                 </a>
               ) : (
