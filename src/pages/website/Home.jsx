@@ -46,7 +46,7 @@ const Home = () => {
         </div>
       </div>
 
-      <section className="py-[5rem] bg-black text-white wrapper">
+      <section className="py-[5rem] backgroundstyle text-white wrapper">
         <div
           data-aos="fade-right"
           className="gradient-rounded-text-box mx-auto lg:mx-0"
@@ -57,22 +57,31 @@ const Home = () => {
           <div data-aos="fade-right" className="flex h-full flex-col gap-7">
             <div className="flex flex-col gap-7 text-center lg:text-start">
               <h2 className="heading-2">
-                Optimizing Processes Through Innovative Technology.
+                Empowering Businesses Through Technology.
               </h2>
               <p className="desc">
-                At SV TECH WAVE, we are proud to deliver exceptional digital
-                solutions designed to meet the ever-changing demands of today’s
-                dynamic business landscape. Guided by our passion for
-                innovation, creativity, and excellence, we bring your bold ideas
-                to life with cutting-edge technology and forward-thinking
-                strategies. As a trusted technology partner, our mission is to
-                empower businesses to thrive and grow in an increasingly
-                competitive digital world. From concept to execution, we
-                specialize in transforming your vision into reality, leveraging
-                expertise in Web Development, App Development, UX/UI Design,
-                Chatbot Development, Machine Learning Solutions, and Game
-                Development.
+                <strong className="font-semibold">SV TECH WAVE</strong> is a
+                leading digital solutions provider dedicated to transforming
+                businesses with cutting-edge technology and innovation. We
+                specialize in delivering custom solutions tailored to meet
+                modern business challenges.
               </p>
+              <div>
+                <h3 className="text-xl font-medium mb-2">Our Mission</h3>
+                <p className="desc">
+                  To empower businesses by providing innovative and reliable
+                  technology solutions, driving growth and success in a
+                  competitive digital landscape.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-medium mb-2">Our Vision</h3>
+                <p className="desc">
+                  To be a trusted global leader in delivering transformative
+                  digital experiences, shaping the future of technology with
+                  creativity and excellence.
+                </p>
+              </div>
             </div>
             <div className="flex gap-5 mt-4 justify-center lg:justify-start">
               <Link to="/contact-us" className="primary-btn">
@@ -87,11 +96,12 @@ const Home = () => {
             <img
               src={aboutUsImg}
               className="object-contain max-h-[30rem]"
-              alt=""
+              alt="About SV Tech Wave"
             />
           </div>
         </div>
       </section>
+
       <OurServices length={3} />
       <section className="py-[5rem] bg-black text-white">
         <div

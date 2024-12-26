@@ -59,8 +59,8 @@ const WhyChooseUs = () => {
   }, [inView]);
 
   return (
-    <section className="py-[5rem] bg-gradient-to-r from-secondary/30 to-primary/30">
-      <div className="wrapper text-center text-white flex flex-col gap-7">
+    <section className="py-[5rem] backgroundstyle">
+      <div className="wrapper text-center text-black flex flex-col gap-7">
         <div data-aos="fade-up" className="gradient-rounded-text-box mx-auto">
           Why Choose Us
         </div>
@@ -83,10 +83,10 @@ const WhyChooseUs = () => {
             <div className="flex flex-col gap-5 h-full">
               <div
                 data-aos="fade-right"
-                className="p-5 border border-primary rounded-xl w-full h-full"
+                className="p-5 border bg-primary border-primary rounded-xl w-full h-full"
               >
                 <div className="flex w-full text-start items-center justify-between gap-3">
-                  <h5 className="text-xl">Technical Expertise</h5>
+                  <h5 className="text-xl text-white">Technical Expertise</h5>
                   <img
                     src={whyChooseUsIcon1}
                     className="h-[3rem] object-contain mb-3"
@@ -100,10 +100,12 @@ const WhyChooseUs = () => {
               </div>
               <div
                 data-aos="fade-right"
-                className="p-5 border border-primary rounded-xl w-full h-full"
+                className="p-5 border bg-primary border-primary rounded-xl w-full h-full"
               >
                 <div className="flex w-full text-start items-center justify-between gap-3">
-                  <h5 className="text-xl">Innovation & Adaptability</h5>
+                  <h5 className="text-xl text-white">
+                    Innovation & Adaptability
+                  </h5>
                   <img
                     src={whyChooseUsIcon2}
                     className="h-[3rem] object-contain mb-3"
@@ -126,10 +128,12 @@ const WhyChooseUs = () => {
             <div className="flex flex-col gap-5 h-full">
               <div
                 data-aos="fade-left"
-                className="p-5 border border-primary rounded-xl w-full h-full"
+                className="p-5 border bg-primary border-primary rounded-xl w-full h-full"
               >
                 <div className="flex w-full text-start items-center justify-between gap-3">
-                  <h5 className="text-xl">Effective Communication</h5>
+                  <h5 className="text-xl text-white">
+                    Effective Communication
+                  </h5>
                   <img
                     src={whyChooseUsIcon3}
                     className="h-[3rem] object-contain mb-3"
@@ -143,10 +147,12 @@ const WhyChooseUs = () => {
               </div>
               <div
                 data-aos="fade-left"
-                className="p-5 border border-primary rounded-xl w-full h-full"
+                className="p-5 border bg-primary border-primary rounded-xl w-full h-full"
               >
                 <div className="flex w-full text-start items-center justify-between gap-3">
-                  <h5 className="text-xl">Security and Compliance</h5>
+                  <h5 className="text-xl text-white">
+                    Security and Compliance
+                  </h5>
                   <img
                     src={whyChooseUsIcon4}
                     className="h-[3rem] object-contain mb-3"
@@ -172,28 +178,28 @@ const WhyChooseUs = () => {
                 <h1 className="heading-1">{yrs}</h1>
                 <span className="absolute top-1 -right-3 text-lg">+</span>
               </div>
-              <p className="font-medium mt-3">Years of Experience</p>
+              <p className="font-medium mt-3">Projects Completed</p>
             </div>
             <div className="w-full flex flex-col items-center justify-center">
               <div className="flex flex-col gap-3 relative w-fit">
                 <h1 className="heading-1">{experts}</h1>
                 <span className="absolute top-1 -right-3 text-lg">+</span>
               </div>
-              <p className="font-medium mt-3">Expert Team</p>
+              <p className="font-medium mt-3">Customer Satisfaction</p>
             </div>
             <div className="w-full flex flex-col items-center justify-center">
               <div className="flex flex-col gap-3 relative w-fit">
                 <h1 className="heading-1">{clients}</h1>
                 <span className="absolute top-1 -right-3 text-lg">+</span>
               </div>
-              <p className="font-medium mt-3">Clients</p>
+              <p className="font-medium mt-3">Global Reach</p>
             </div>
             <div className="w-full flex flex-col items-center justify-center">
               <div className="flex flex-col gap-3 relative w-fit">
                 <h1 className="heading-1">{onTimeCompletion}</h1>
                 <span className="absolute top-1 -right-3 text-lg">%</span>
               </div>
-              <p className="font-medium mt-3">On Time Completion</p>
+              <p className="font-medium mt-3">Success Rate</p>
             </div>
           </div>
         </div>

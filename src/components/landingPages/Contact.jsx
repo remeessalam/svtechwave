@@ -65,14 +65,15 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-[5rem] text-white bg-gradient-to-r from-secondary/50 to-primary/50"
+      className="py-[5rem] backgroundstyle"
+      // text-white bg-gradient-to-r from-secondary/50 to-primary/50
     >
       <div className="wrapper">
         <div className="h-full grid md:grid-cols-2 gap-10 py-10">
           <div data-aos="fade-right" className="flex flex-col gap-4">
             <h2 className="heading-2">Get In Touch With Us!</h2>
             <p className="desc">
-              Let <span className="font-semibold">VSV TECH WAVE</span> be the
+              Let <span className="font-semibold">SV TECH WAVE</span> be the
               catalyst for your digital transformation. Together, we can build
               solutions that are as dynamic as your vision, helping your
               business reach new heights.
@@ -85,7 +86,7 @@ const Contact = () => {
           >
             <div className="">
               <input
-                className="w-full bg-transparent outline-none border rounded-sm font-light border-white/40 px-2 py-3"
+                className="w-full bg-transparent outline-none border rounded-sm font-light border-black/40 px-2 py-3"
                 type="text"
                 placeholder="Full Name"
                 {...register("name", {
@@ -103,7 +104,7 @@ const Contact = () => {
             </div>
             <div className="">
               <input
-                className="w-full bg-transparent outline-none border rounded-sm font-light border-white/40 px-2 py-3"
+                className="w-full bg-transparent outline-none border rounded-sm font-light border-black/40 px-2 py-3"
                 type="email"
                 placeholder="Email"
                 {...register("email", {
@@ -119,7 +120,7 @@ const Contact = () => {
             <div className="">
               <input
                 type="tel"
-                className="w-full bg-transparent outline-none border rounded-sm font-light border-white/40 px-2 py-3"
+                className="w-full bg-transparent outline-none border rounded-sm font-light border-black/40 px-2 py-3"
                 placeholder="Phone Number"
                 inputMode="numeric"
                 {...register("phone", {
@@ -134,7 +135,7 @@ const Contact = () => {
             </div>
             <div className="">
               <input
-                className="w-full bg-transparent outline-none border rounded-sm font-light border-white/40 px-2 py-3"
+                className="w-full bg-transparent outline-none border rounded-sm font-light border-black/40 px-2 py-3"
                 type="text"
                 placeholder="Subject"
                 {...register("subject", {
@@ -152,7 +153,7 @@ const Contact = () => {
             </div>
             <div className="">
               <textarea
-                className="w-full bg-transparent outline-none border rounded-sm font-light border-white/40 px-2 py-3"
+                className="w-full bg-transparent outline-none border rounded-sm font-light border-black/40 px-2 py-3"
                 rows="4"
                 placeholder="Message"
                 {...register("message", {

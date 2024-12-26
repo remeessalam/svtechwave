@@ -66,10 +66,10 @@ const ContactForm = () => {
       .finally(() => setSpinner(false));
   };
   return (
-    <div className="wrapper py-[5rem] grid lg:grid-cols-[45%_auto] gap-7">
+    <div className="wrapper py-[5rem] grid lg:grid-cols-[45%_auto] gap-7 ">
       <div
         data-aos="fade-right"
-        className="bg-gradient-to-r flex flex-col gap-2 text-white from-secondary/30 to-primary/30 p-4 rounded-xl"
+        className="bg-gradient-to-r flex flex-col gap-2 text-black from-secondary/30 to-primary/30 p-4 rounded-xl"
       >
         <div className="gradient-rounded-text-box">Book an Appointment</div>
         <h2 className="heading-2 mt-5">Get in Touch</h2>
@@ -116,8 +116,8 @@ const ContactForm = () => {
         data-aos="fade-left"
         className="h-full flex flex-col justify-between gap-7"
       >
-        <div className="p-[1px] text-white h-full bg-gradient-to-r from-secondary to-primary rounded-lg">
-          <div className="rounded-lg h-full bg-[#101010] p-4">
+        <div className="p-[1px]  h-full bg-gradient-to-r from-secondary to-primary rounded-lg">
+          <div className="rounded-lg h-full backgroundstyle p-4">
             <h3 className="text-lg">Have Any Question?</h3>
             <form
               onSubmit={handleSubmit(handleFormSubmit)}
@@ -126,7 +126,7 @@ const ContactForm = () => {
               <div className="flex flex-col gap-1">
                 <input
                   type="text"
-                  className="border-primary p-2 rounded-md border outline-none bg-transparent"
+                  className="border-primary p-2 placeholder-black rounded-md border outline-none bg-transparent"
                   placeholder="Name"
                   {...register("name", {
                     required: "Full name is required",
@@ -145,7 +145,7 @@ const ContactForm = () => {
                 <div className="flex flex-col gap-1">
                   <input
                     type="email"
-                    className="border-primary p-2 rounded-md border outline-none bg-transparent"
+                    className="border-primary p-2 placeholder-black rounded-md border outline-none bg-transparent"
                     placeholder="Email"
                     {...register("email", {
                       required: "Email is required",
@@ -162,7 +162,7 @@ const ContactForm = () => {
                 <div className="flex flex-col gap-1">
                   <input
                     type="tel"
-                    className="border-primary p-2 rounded-md border outline-none bg-transparent"
+                    className="border-primary placeholder-black p-2 rounded-md border outline-none bg-transparent"
                     placeholder="Phone Number"
                     {...register("phone", {
                       required: "Phone number is required",
@@ -180,7 +180,7 @@ const ContactForm = () => {
               <div className="flex flex-col gap-1">
                 <textarea
                   rows="4"
-                  className="border-primary p-2 rounded-md border outline-none bg-transparent"
+                  className="border-primary placeholder-black p-2 rounded-md border outline-none bg-transparent"
                   placeholder="Message"
                   {...register("message", {
                     required: "Message is required",
@@ -207,7 +207,7 @@ const ContactForm = () => {
             </form>
           </div>
         </div>
-        <div className="flex gap-5 items-center text-white mb-1">
+        <div className="flex gap-5 items-center text-black mb-1">
           <p>Follow Us On:</p>
           <div className="flex items-center gap-3">
             <Link
@@ -216,7 +216,7 @@ const ContactForm = () => {
               target="_blank"
               className="group w-[2.5rem] h-[2.5rem] rounded-full border-primary border flex justify-center items-center"
             >
-              <BsFacebook className="text-xl text-white group-hover:text-primary transition-all duration-300" />
+              <BsFacebook className="text-xl  group-hover:text-primary transition-all duration-300" />
             </Link>
             <Link
               to={companyDetails.twitter}
@@ -224,7 +224,7 @@ const ContactForm = () => {
               target="_blank"
               className="group w-[2.5rem] h-[2.5rem] rounded-full border-primary border flex justify-center items-center"
             >
-              <BsTwitter className="text-xl text-white group-hover:text-primary transition-all duration-300" />
+              <BsTwitter className="text-xl  group-hover:text-primary transition-all duration-300" />
             </Link>
             <Link
               to={companyDetails.linkedin}
@@ -232,7 +232,7 @@ const ContactForm = () => {
               target="_blank"
               className="group w-[2.5rem] h-[2.5rem] rounded-full border-primary border flex justify-center items-center"
             >
-              <BsLinkedin className="text-xl text-white group-hover:text-primary transition-all duration-300" />
+              <BsLinkedin className="text-xl  group-hover:text-primary transition-all duration-300" />
             </Link>
             <Link
               to={companyDetails.instagram}
@@ -240,7 +240,7 @@ const ContactForm = () => {
               target="_blank"
               className="group w-[2.5rem] h-[2.5rem] rounded-full border-primary border flex justify-center items-center"
             >
-              <BsInstagram className="text-xl text-white group-hover:text-primary transition-all duration-300" />
+              <BsInstagram className="text-xl  group-hover:text-primary transition-all duration-300" />
             </Link>
           </div>
         </div>

@@ -21,6 +21,7 @@
 html {
   background-color: #000000;
   overflow-x: hidden;
+  background-color: "#F2E9F3";
 }
 
 body {
@@ -31,6 +32,9 @@ body {
 }
 
 @layer utilities {
+  .backgroundstyle {
+    @apply bg-[#F2E9F3] text-black;
+  }
   .wrapper {
     @apply max-w-7xl mx-auto px-4;
   }

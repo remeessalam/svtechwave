@@ -15,7 +15,7 @@ const OurServices = ({ length }) => {
     setIsOpen(true);
   };
   return (
-    <div className="py-[5rem] bg-[#101010] text-white">
+    <div className="py-[5rem] backgroundstyle text-white">
       <div
         data-aos="fade-up"
         className="wrapper flex flex-col text-center gap-5 items-center"
@@ -36,18 +36,18 @@ const OurServices = ({ length }) => {
               onClick={() => handleSelectServiceToShowDetail(service)}
               data-aos="fade-up"
               key={service.id}
-              className="rounded-lg p-[1px] bg-gradient-to-r from-secondary to-primary cursor-pointer"
+              className="group rounded-lg p-[1px] bg-gradient-to-r from-secondary to-primary cursor-pointer"
             >
               <div className="rounded-lg bg-[#101010] hover:bg-black/70 transition-all duration-300 p-5 flex flex-col justify-between items-start text-start h-full gap-4">
                 <div className="flex flex-col gap-3">
-                  <h5 className="font-semibold text-xl font-raleway">
+                  <h5 className="font-semibold text-xl font-raleway text-white group-hover:text-primary">
                     {service.title}
                   </h5>
                   <p className="desc text-white/80">{service.desc}</p>
                 </div>
                 <button
                   onClick={() => handleSelectServiceToShowDetail(service)}
-                  className="desc mt-1 flex items-center gap-3 hover:text-primary transition-all duration-300"
+                  className="desc mt-1 flex items-center gap-3 text-white group-hover:text-primary transition-all duration-300"
                 >
                   Learn More <PiCaretDoubleRightBold />
                 </button>

@@ -17,7 +17,7 @@ const AboutUs = () => {
     <>
       <div
         data-aos="fade-down"
-        className="h-[40vh] sm:h-[55vh] md:h-[70vh] relative"
+        className="h-[40vh] sm:h-[55vh] md:h-[70vh] relative backgroundstyle"
       >
         <img
           src={aboutUsBanner}
@@ -25,7 +25,7 @@ const AboutUs = () => {
           alt=""
         />
       </div>
-      <div className="py-[5rem] text-white text-center">
+      <div className="py-[5rem] text-white text-center backgroundstyle">
         <div className="wrapper flex flex-col items-center gap-5 mb-[5rem]">
           <div data-aos="fade-up" className="gradient-rounded-text-box">
             About Us
@@ -183,7 +183,7 @@ const AboutUs = () => {
             {whyChooseUsContent.map((item) => (
               <li data-aos="fade-up" key={item.id} className="text-[#CF00FE]">
                 <span className="font-raleway font-bold">{item.title}:</span>{" "}
-                <span className="desc text-white ml-1">{item.desc}</span>
+                <span className="desc text-black ml-1">{item.desc}</span>
               </li>
             ))}
           </ul>

@@ -56,9 +56,8 @@ export {
 export const companyDetails = {
   phone: "+91-9505066888",
   whatsapp: "+91-9505066888",
-  email: "example@xyz.com",
-  address:
-    "3-72/1,BANK COLONY ,SARPAVARAM, KAKINADA-ANDHRA PRADESH-533005,INDIA.",
+  email: "info@svtechwave.com",
+  address: "Andra Pradesh,IN.",
   twitter: "",
   linkedin: "",
   instagram: "",
@@ -319,7 +318,7 @@ export const whyChooseUsContent = [
   },
   {
     title: "Long-Term Partnerships",
-    desc: "We’re not just a service provider; we’re your strategic partner. From conceptualization to deployment and ongoing support, we’re with you every step of the way, ensuring your success in the digital landscape.",
+    desc: "We’re not just a service provider; we’re your strategic partner. From conceptualization to deployment and ongoing support, we’re with you every step of the way, ensuring our success in the digital landscape.",
   },
   {
     title: "Agility and Innovation",
