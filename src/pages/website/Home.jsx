@@ -11,7 +11,7 @@ import UnlockEfficiency from "../../components/common/UnlockEfficiency";
 
 const Home = () => {
   return (
-    <>
+    <div className="backgroundstyle">
       <div id="banner" className="h-screen relative">
         <ReactPlayer
           url={homeBannerVideo}
@@ -134,7 +134,7 @@ const Home = () => {
       <UnlockEfficiency />
       <EndlessOpportunitiesSection />
       <Contact />
-    </>
+    </div>
   );
 };
 
