@@ -254,7 +254,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <OurServices length={3} />
+      <OurServices length={6} />
       <Testimonials />
     </>
   );

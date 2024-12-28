@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  BsFacebook,
-  BsInstagram,
-  BsLinkedin,
-  BsTwitter,
-} from "react-icons/bs";
+import { BsFacebook, BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
 import { companyDetails, logoImg, routes } from "../../constant";
 import { Link } from "react-router-dom";
 
@@ -60,29 +55,33 @@ const WebsiteFooter = () => {
                 to={companyDetails.facebook}
                 rel="noopener noreferrer"
                 target="_blank"
+                className="group border-primary border p-3 rounded-full"
               >
-                <BsFacebook className="text-xl text-white/90 hover:text-primary transition-all duration-300" />
+                <BsFacebook className="text-xl text-white/90 group-hover:text-primary transition-all duration-300" />
               </Link>
               <Link
                 to={companyDetails.twitter}
                 rel="noopener noreferrer"
                 target="_blank"
+                className="group border-primary border p-3 rounded-full"
               >
-                <BsTwitter className="text-xl text-white/90 hover:text-primary transition-all duration-300" />
+                <BsTwitter className="text-xl text-white/90 group-hover:text-primary transition-all duration-300" />
               </Link>
               <Link
                 to={companyDetails.linkedin}
                 rel="noopener noreferrer"
                 target="_blank"
+                className="group border-primary border p-3 rounded-full"
               >
-                <BsLinkedin className="text-xl text-white/90 hover:text-primary transition-all duration-300" />
+                <BsLinkedin className="text-xl text-white/90 group-hover:text-primary transition-all duration-300" />
               </Link>
               <Link
                 to={companyDetails.instagram}
                 rel="noopener noreferrer"
                 target="_blank"
+                className="group border-primary border p-3 rounded-full"
               >
-                <BsInstagram className="text-xl text-white/90 hover:text-primary transition-all duration-300" />
+                <BsInstagram className="text-xl text-white/90 group-hover:text-primary transition-all duration-300" />
               </Link>
             </div>
           </div>
