@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { SpinnerContext } from "../SpinnerContext";
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import { companyDetails } from "../../constant";
+import { companyDetails, contactbg } from "../../constant";
 import toast from "react-hot-toast";
 
 const Contact = () => {
@@ -78,6 +78,11 @@ const Contact = () => {
               solutions that are as dynamic as your vision, helping your
               business reach new heights.
             </p>
+            <img
+              src={contactbg}
+              alt="contactbg"
+              className="max-h-[26rem] rounded-xl"
+            />
           </div>
           <form
             onSubmit={handleSubmit(handleFormSubmit)}
@@ -154,7 +159,7 @@ const Contact = () => {
             <div className="">
               <textarea
                 className="w-full bg-transparent outline-none border rounded-sm font-light border-black/40 px-2 py-3"
-                rows="4"
+                rows="9"
                 placeholder="Message"
                 {...register("message", {
                   required: "Message is required",

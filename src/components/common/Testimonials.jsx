@@ -144,13 +144,13 @@ const Testimonials = () => {
     }
   };
   return (
-    <div className="py-[5rem]">
+    <div className="py-[5rem] bg-backgroundcolor">
       <div className="wrapper flex flex-col items-center gap-7">
         <div className="gradient-rounded-text-box" data-aos="fade-up">
           Testimonials
         </div>
         <h2
-          className="heading-2 text-white mb-2 text-center"
+          className="heading-2 text-black mb-2 text-center"
           data-aos="fade-up"
         >
           Our Clients' Experiences
@@ -159,7 +159,7 @@ const Testimonials = () => {
           {reviews.map((item) => (
             <div
               key={item.id}
-              className="keen-slider__slide min-h-[18rem] justify-between text-white p-7 bg-[#101010] rounded-xl flex flex-col gap-4"
+              className="keen-slider__slide min-h-[18rem] justify-between text-white p-7 bg-primary rounded-xl flex flex-col gap-4"
             >
               <p className="italic desc">{item.desc}</p>
               <div className="flex flex-col gap-2">

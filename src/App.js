@@ -18,7 +18,7 @@ const Thankyou = lazy(() => import("./pages/Thankyou"));
 
 AOS.init({
   once: true,
-  duration: 500,
+  duration: 1500,
 });
 export default function App() {
   return (

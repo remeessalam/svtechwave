@@ -6,6 +6,7 @@ import {
   aboutUsGridImg3,
   aboutUsGridImg4,
   aboutUsGridImg5,
+  features,
   whyChooseUsContent,
 } from "../../constant";
 import UnlockEfficiency from "../../components/common/UnlockEfficiency";
@@ -45,7 +46,47 @@ const AboutUs = () => {
             mobile application development, and data analytics to ensure your
             business stays ahead of the competition.
           </p>
-          <div className="pt-[3rem]">
+          <div className="min-h-screen  py-20 px-4 sm:px-6 lg:px-8">
+            <div className="wrapper">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                  Transforming Ideas into Intelligence
+                </h2>
+                <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                  Discover how our AI solutions can revolutionize your business
+                  with cutting-edge technology and innovative approaches.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {features.map((feature, index) => (
+                  <div
+                    key={index}
+                    className="group bg-primary hover:bg-primary/40 relative  rounded-2xl shadow-lg p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 overflow-hidden"
+                  >
+                    <div className="absolute inset-0 bg-gradient-to-r from-purple-500/5 to-indigo-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+                    <div className="relative z-10 ">
+                      <span className="text-4xl mb-6 block">
+                        {feature.icon}
+                      </span>
+
+                      <h3 className="text-xl font-semibold group-hover:text-gray-900 text-gray-100 mb-4">
+                        {feature.title}
+                      </h3>
+
+                      <p className="text-gray-200 group-hover:text-gray-900 leading-relaxed">
+                        {feature.description}
+                      </p>
+                    </div>
+
+                    <div className="absolute bottom-0 left-0 h-1 w-0 bg-gradient-to-r from-purple-500 to-indigo-500 transition-all duration-300 group-hover:w-full" />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+          {/* <div className="pt-[3rem]">
             <div className="flex flex-col gap-5">
               <div className="flex flex-col-reverse sm:grid text-start grid-cols-2 gap-5 max-w-5xl mx-auto">
                 <div
@@ -172,10 +213,10 @@ const AboutUs = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <UnlockEfficiency />
-        <div className="wrapper mt-[5rem]">
+        {/* <div className="wrapper mt-[5rem]">
           <h2 data-aos="fade-up" className="heading-2">
             Why Choose SV TECH WAVE?
           </h2>
@@ -187,6 +228,30 @@ const AboutUs = () => {
               </li>
             ))}
           </ul>
+        </div> */}
+        <div className="py-16 px-4 sm:px-6 lg:px-8 bg-backgroundcolor">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 data-aos="fade-up" className="heading-2">
+                Why Choose SV TECH WAVE?
+              </h2>
+              {/* <div className="w-20 h-1 bg-purple-600 mx-auto" /> */}
+            </div>
+
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
+              {whyChooseUsContent.map((feature, index) => (
+                <div
+                  key={index}
+                  className="p-6 hover:scale-105 transition-all duration-300 bg-primary rounded-lg border border-gray-200 hover:border-slate-500 "
+                >
+                  <h3 className="text-xl font-semibold text-white mb-3">
+                    {feature.title}
+                  </h3>
+                  <p className="text-white leading-relaxed">{feature.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
       <OurServices length={3} />

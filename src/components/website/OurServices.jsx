@@ -36,18 +36,29 @@ const OurServices = ({ length }) => {
               onClick={() => handleSelectServiceToShowDetail(service)}
               data-aos="fade-up"
               key={service.id}
-              className="group rounded-lg p-[1px] bg-gradient-to-r from-secondary to-primary cursor-pointer"
+              className="group rounded-lg p-[1px] bg-gradient-to-r from-slate-900 to-primary cursor-pointer"
             >
-              <div className="rounded-lg bg-[#101010] hover:bg-black/70 transition-all duration-300 p-5 flex flex-col justify-between items-start text-start h-full gap-4">
+              {
+                // bg-[#101010]
+              }
+
+              <div className="rounded-lg bg-primary group-hover:bg-primary/50 transition-all duration-300 p-5 flex flex-col justify-between items-start text-start h-full gap-4">
                 <div className="flex flex-col gap-3">
-                  <h5 className="font-semibold text-xl font-raleway text-white group-hover:text-primary">
+                  <div className="bg-black/50 w-fit p-4 rounded-full">
+                    <img
+                      src={service.icon}
+                      alt=""
+                      className="w-14 h-14 group-hover:scale-105 transition-all duration-500"
+                    />
+                  </div>
+                  <h5 className="font-semibold text-xl font-raleway text-white">
                     {service.title}
                   </h5>
                   <p className="desc text-white/80">{service.desc}</p>
                 </div>
                 <button
                   onClick={() => handleSelectServiceToShowDetail(service)}
-                  className="desc mt-1 flex items-center gap-3 text-white group-hover:text-primary transition-all duration-300"
+                  className="desc mt-1 flex items-center gap-3 text-white group-hover:underline  underline-offset-4 transition-all duration-300"
                 >
                   Learn More <PiCaretDoubleRightBold />
                 </button>
@@ -78,8 +89,15 @@ const OurServices = ({ length }) => {
           </button>
         </div>
         <div className="flex flex-col gap-6 tex-white pb-[2rem]">
-          <h1 className="heading-2">{selectedService.title}</h1>
-          <p className="desc whitespace-pre-line">
+          <div>
+            <img
+              src={selectedService.img}
+              alt={selectedService.title}
+              className=" max-h-[30rem] mx-auto rounded-xl"
+            />
+          </div>
+          <h1 className="heading-2 text-white">{selectedService.title}</h1>
+          <p className="desc whitespace-pre-line !text-white">
             {selectedService.detailContent}
           </p>
         </div>

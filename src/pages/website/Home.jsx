@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Contact from "../../components/landingPages/Contact";
-import aboutUsImg from "../../assets/images/landing-aboutus.png";
+import aboutUsImg from "../../assets/images/landing-aboutus.jpg";
 import WhyChooseUs from "../../components/common/WhyChooseUs";
 import ReactPlayer from "react-player";
-import { homeBannerVideo } from "../../constant";
+import { homeBannerVideo, whowearebh } from "../../constant";
 import OurServices from "../../components/website/OurServices";
 import EndlessOpportunitiesSection from "../../components/common/EndlessOpportunitiesSection";
 import UnlockEfficiency from "../../components/common/UnlockEfficiency";
@@ -23,7 +23,7 @@ const Home = () => {
           playing
           className="absolute"
         />
-        <div className="bg-gradient-to-r to-black/50 from-transparent absolute w-full h-full"></div>
+        <div className="bg-gradient-to-r to-black/90 from-transparent absolute w-full h-full"></div>
         <div className="pt-[3rem] wrapper flex items-center h-full">
           <div
             data-aos="fade-up"
@@ -32,10 +32,10 @@ const Home = () => {
             <div className="rounded-text-box border-white/70 font-medium">
               IT Services
             </div>
-            <h1 className="heading-1">
+            <h1 className="heading-1 ">
               Empowering Your Vision <br /> with Digital Innovation
             </h1>
-            <p className="desc">
+            <p className="desc ">
               We provide innovative IT solutions designed to address the
               specific challenges of today's businesses.
             </p>
@@ -48,13 +48,20 @@ const Home = () => {
 
       <section className="py-[5rem] backgroundstyle text-white wrapper">
         <div
-          data-aos="fade-right"
-          className="gradient-rounded-text-box mx-auto lg:mx-0"
+          data-aos="fade-left"
+          className="gradient-rounded-text-box mx-auto "
         >
           About Us
         </div>
         <div className="flex flex-col-reverse items-center lg:grid grid-cols-2 gap-10 mt-7">
-          <div data-aos="fade-right" className="flex h-full flex-col gap-7">
+          <div data-aos="fade-right" className="h-full">
+            <img
+              src={aboutUsImg}
+              className="object-cover max-h-[16rem] sm:max-h-[32rem] rounded-xl h-full"
+              alt="About SV Tech Wave"
+            />
+          </div>
+          <div data-aos="fade-left" className="flex h-full flex-col gap-7">
             <div className="flex flex-col gap-7 text-center lg:text-start">
               <h2 className="heading-2">
                 Empowering Businesses Through Technology.
@@ -92,18 +99,15 @@ const Home = () => {
               </Link>
             </div>
           </div>
-          <div data-aos="fade-left" className="h-full">
-            <img
-              src={aboutUsImg}
-              className="object-contain max-h-[30rem]"
-              alt="About SV Tech Wave"
-            />
-          </div>
         </div>
       </section>
 
-      <OurServices length={3} />
-      <section className="py-[5rem] bg-black text-white">
+      <OurServices length={6} />
+      <section
+        className="relative py-[5rem] bg-black text-white bg-no-repeat bg-current bg-cover"
+        style={{ backgroundImage: `url(${whowearebh})` }}
+      >
+        <div className=" w-full h-full bg-black/50 absolute  top-0" />
         <div
           data-aos="fade-up"
           className="wrapper text-center flex flex-col gap-3"
@@ -111,10 +115,10 @@ const Home = () => {
           <div className="gradient-rounded-text-box mx-auto mb-4">
             Who We Are
           </div>
-          <h1 className="heading-2 bg-gradient-to-r from-[#7186FF] max-w-[50rem] mx-auto to-[#A502A8] bg-clip-text text-transparent">
+          <h1 className="heading-2  max-w-[50rem] mx-auto text-white bg-clip-text text-transparent">
             Reliable IT Support for Your Business
           </h1>
-          <p className="desc max-w-[50rem] mx-auto">
+          <p className="desc max-w-[50rem] mx-auto text-white drop-shadow-2xl">
             At SV TECH WAVE, we understand that in today’s digital-first world,
             your website is more than just an online presence—it’s the heart of
             your brand’s identity, a vital business tool, and often the first
@@ -132,7 +136,7 @@ const Home = () => {
       {/* <Faqs /> */}
       <WhyChooseUs />
       <UnlockEfficiency />
-      <EndlessOpportunitiesSection />
+      {/* <EndlessOpportunitiesSection /> */}
       <Contact />
     </div>
   );
