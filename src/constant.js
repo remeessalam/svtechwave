@@ -75,6 +75,8 @@ export {
   aboutUsGridImg4,
   aboutUsGridImg5,
   whyChooseUsPng1,
+  web1,
+  app1,
 };
 
 // company details

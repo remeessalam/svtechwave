@@ -8,10 +8,13 @@ import section5Img6 from "../../assets/images/section-5-img-6.png";
 import section5Img7 from "../../assets/images/section-5-img-7.png";
 import Contact from "../../components/landingPages/Contact";
 import {
+  app1,
   appDevBanner,
   appLandingAbout,
+  web1,
   webDevBanner,
   webLandingAbout,
+  whowearebh,
 } from "../../constant";
 import { Link as ScrollLink } from "react-scroll";
 import WhyChooseUs from "../../components/common/WhyChooseUs";
@@ -26,13 +29,13 @@ export const LandingPage = ({ page }) => {
   const isWebDevelopment = Boolean(page === "web-development");
   return (
     <>
-      <div id="banner" className="h-screen relative">
+      <div id="banner" className="h-screen relative bg-backgroundcolor">
         <img
           src={isWebDevelopment ? webDevBanner : appDevBanner}
-          className="w-full h-full object-cover object-right absolute"
+          className="w-full h-full object-cover object-center absolute"
           alt=""
         />
-        <div className="bg-gradient-to-r from-white/20 to-secondary/80 absolute w-full h-full"></div>
+        <div className="bg-black/30 absolute w-full h-full"></div>
         <div
           data-aos="fade-up"
           className="pt-[3rem] wrapper flex items-center h-full"
@@ -41,7 +44,7 @@ export const LandingPage = ({ page }) => {
             <div className="rounded-text-box border-white/70 font-medium text-white">
               {isWebDevelopment ? "Web Development" : "App Development"}
             </div>
-            <h1 className="heading-1 text-white">
+            <h1 className="font-raleway text-[2rem] md:text-7xl font-bold leading-tight text-white">
               {isWebDevelopment
                 ? "Creating Websites that Grow with Your Business"
                 : "Igniting innovation through artificial intelligence, apps and mores"}
@@ -61,67 +64,73 @@ export const LandingPage = ({ page }) => {
           </div>
         </div>
       </div>
-
-      <ContactForm />
-
-      <section id="about" className="pb-[5rem] bg-black text-white wrapper">
-        <div
-          data-aos="fade-up"
-          className="gradient-rounded-text-box mx-auto lg:mx-0"
-        >
-          {isWebDevelopment ? "Web Development" : "App Development"}
-        </div>
-        <div className="flex flex-col-reverse items-center lg:grid grid-cols-2 gap-10 mt-7">
+      <div className="bg-backgroundcolor">
+        <ContactForm />
+      </div>
+      <div className="bg-backgroundcolor">
+        <section id="about" className="pb-[5rem]  text-black wrapper">
           <div
-            data-aos="fade-right"
-            className="flex h-full flex-col gap-7 text-center lg:text-start"
+            data-aos="fade-up"
+            className="gradient-rounded-text-box mx-auto lg:mx-0"
           >
-            <div className="flex flex-col gap-7">
-              <h2 className="heading-2">
-                {isWebDevelopment
-                  ? "Innovative Web Development Solutions for Modern Brands"
-                  : "Building Apps that Elevate Your Business with Our App Development Services."}
-              </h2>
-              <p className="desc">
-                {isWebDevelopment
-                  ? "Our approach to web development combines innovation with technical expertise. We deliver websites that capture your brand’s essence while delivering a seamless experience across all devices, helping you connect with users and drive growth."
-                  : "Whether you’re a startup with a fresh idea or an established enterprise, we provide full-cycle app development services tailored to your unique goals. Our apps are designed to boost engagement, optimize performance, and scale with your business, giving you a competitive edge."}
-              </p>
+            {isWebDevelopment ? "Web Development" : "App Development"}
+          </div>
+          <div className="flex flex-col-reverse items-center lg:grid grid-cols-2 gap-10 mt-7">
+            <div
+              data-aos="fade-right"
+              className="flex h-full flex-col gap-7 text-center lg:text-start"
+            >
+              <div className="flex flex-col gap-7">
+                <h2 className="heading-2">
+                  {isWebDevelopment
+                    ? "Innovative Web Development Solutions for Modern Brands"
+                    : "Building Apps that Elevate Your Business with Our App Development Services."}
+                </h2>
+                <p className="desc">
+                  {isWebDevelopment
+                    ? "Our approach to web development combines innovation with technical expertise. We deliver websites that capture your brand’s essence while delivering a seamless experience across all devices, helping you connect with users and drive growth."
+                    : "Whether you’re a startup with a fresh idea or an established enterprise, we provide full-cycle app development services tailored to your unique goals. Our apps are designed to boost engagement, optimize performance, and scale with your business, giving you a competitive edge."}
+                </p>
+              </div>
+              <div className="flex justify-center lg:justify-start gap-5 mt-4">
+                <ScrollLink
+                  to="contact"
+                  smooth
+                  offset={-90}
+                  className="primary-btn"
+                >
+                  Contact Us
+                </ScrollLink>
+                <ScrollLink
+                  to="services"
+                  smooth
+                  offset={-80}
+                  className="secondary-btn"
+                >
+                  Our Services
+                </ScrollLink>
+              </div>
             </div>
-            <div className="flex justify-center lg:justify-start gap-5 mt-4">
-              <ScrollLink
-                to="contact"
-                smooth
-                offset={-90}
-                className="primary-btn"
-              >
-                Contact Us
-              </ScrollLink>
-              <ScrollLink
-                to="services"
-                smooth
-                offset={-80}
-                className="secondary-btn"
-              >
-                Our Services
-              </ScrollLink>
+            <div data-aos="fade-left" className="h-full">
+              <img
+                src={isWebDevelopment ? web1 : app1}
+                className="object-contain max-h-[30rem] rounded-xl"
+                alt=""
+              />
             </div>
           </div>
-          <div data-aos="fade-left" className="h-full">
-            <img
-              src={isWebDevelopment ? webLandingAbout : appLandingAbout}
-              className="object-contain max-h-[30rem]"
-              alt=""
-            />
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       <LandingServices page={page} />
       <Portfolio page={page} />
       <WhyChooseUs />
 
-      <section className="py-[5rem] bg-black text-white">
+      <section
+        className="relative py-[5rem] bg-black text-white bg-no-repeat bg-current bg-cover"
+        style={{ backgroundImage: `url(${whowearebh})` }}
+      >
+        <div className=" w-full h-full bg-black/50 absolute  top-0" />
         <div className="wrapper text-center flex flex-col gap-3">
           <div
             data-aos="fade-up"
@@ -131,7 +140,7 @@ export const LandingPage = ({ page }) => {
           </div>
           <h1
             data-aos="fade-up"
-            className="heading-1 bg-gradient-to-r from-[#7186FF_40%] md:min-h-[5rem] to-[#A502A8_50%] bg-clip-text text-transparent"
+            className="heading-1  md:min-h-[5rem] text-white bg-clip-text text-transparent"
           >
             Design & Revolution
           </h1>
@@ -226,7 +235,7 @@ export const LandingPage = ({ page }) => {
       {/* <Faqs /> */}
 
       <UnlockEfficiency />
-      <EndlessOpportunitiesSection />
+      {/* <EndlessOpportunitiesSection /> */}
       <BrandLogos />
       <Contact />
     </>

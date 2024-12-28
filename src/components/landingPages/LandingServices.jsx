@@ -7,8 +7,11 @@ const LandingServices = ({ page }) => {
       ? webDevelopmentServices
       : appDevelopmentServices;
   return (
-    <div id="services" className="flex justify-center relative">
-      <div className="wrapper py-10 flex flex-col items-center gap-5 z-10 text-white">
+    <div
+      id="services"
+      className="flex justify-center relative bg-backgroundcolor"
+    >
+      <div className="wrapper py-10 flex flex-col items-center gap-5 z-10 text-black">
         <div data-aos="fade-up" className="gradient-rounded-text-box mx-auto">
           Our {page === "web-development" ? "Web" : "App"} Development Services
         </div>
@@ -32,9 +35,9 @@ const LandingServices = ({ page }) => {
           {services.map((item) => (
             <div
               key={item.id}
-              className="shadow-2xl transition-all border-2 border-primary/40 bg-primary/15 hover:-translate-y-1 hover:bg-primary/25 duration-300 rounded-lg"
+              className="shadow-2xl group transition-all border-2 border-primary/40 bg-primary hover:-translate-y-1 hover:bg-primary/75 duration-300 rounded-lg"
             >
-              <div className="flex h-full flex-col gap-2 items-center text-center text-white p-5 rounded-lg">
+              <div className="flex h-full flex-col gap-2 items-center text-center text-white hover:text-black p-5 rounded-lg">
                 <img
                   src={item.icon}
                   alt="icon"
@@ -43,7 +46,9 @@ const LandingServices = ({ page }) => {
                 <h6 className="font-semibold text-2xl font-raleway">
                   {item.title}
                 </h6>
-                <p className="text-md text-white/70 desc">{item.description}</p>
+                <p className="text-md text-white/70 group-hover:text-black desc">
+                  {item.description}
+                </p>
               </div>
             </div>
           ))}
