@@ -27,41 +27,42 @@ const OurServices = ({ length }) => {
           Advanced and Highly Reliable Performance
         </h2>
         <p data-aos="fade-up" className="desc max-w-[50rem]">
-          Our success is our success and together we help our society to become
+          Our success is your success and together we help our society to become
           a better place to live and work.
         </p>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 mt-3">
           {services.map((service) => (
-            <div
-              onClick={() => handleSelectServiceToShowDetail(service)}
-              data-aos="fade-up"
-              key={service.id}
-              className="group rounded-lg p-[1px] bg-gradient-to-r from-slate-900 to-primary cursor-pointer"
-            >
-              {
-                // bg-[#101010]
-              }
+            <div key={service.id} data-aos="fade-up" className="h-full">
+              <div
+                onClick={() => handleSelectServiceToShowDetail(service)}
+                key={service.id}
+                className="group h-full hover:scale-105 transition-all duration-300 rounded-lg p-[1px] bg-gradient-to-r from-slate-900 to-primary cursor-pointer"
+              >
+                {
+                  // bg-[#101010]
+                }
 
-              <div className="rounded-lg bg-primary group-hover:bg-primary/50 transition-all duration-300 p-5 flex flex-col justify-between items-start text-start h-full gap-4">
-                <div className="flex flex-col gap-3">
-                  <div className="bg-black/50 w-fit p-4 rounded-full">
-                    <img
-                      src={service.icon}
-                      alt=""
-                      className="w-14 h-14 group-hover:scale-105 transition-all duration-500"
-                    />
+                <div className="rounded-lg bg-primary group-hover:bg-primary/50 transition-all duration-300 p-5 flex flex-col justify-between items-start text-start h-full gap-4">
+                  <div className="flex flex-col gap-3">
+                    <div className="bg-black/50 w-fit p-4 rounded-full">
+                      <img
+                        src={service.icon}
+                        alt=""
+                        className="w-14 h-14 group-hover:scale-105 transition-all duration-500"
+                      />
+                    </div>
+                    <h5 className="font-semibold text-xl font-raleway text-white">
+                      {service.title}
+                    </h5>
+                    <p className="desc text-white/80">{service.desc}</p>
                   </div>
-                  <h5 className="font-semibold text-xl font-raleway text-white">
-                    {service.title}
-                  </h5>
-                  <p className="desc text-white/80">{service.desc}</p>
+                  <button
+                    onClick={() => handleSelectServiceToShowDetail(service)}
+                    className="desc mt-1 flex items-center gap-3 text-white group-hover:underline  underline-offset-4 transition-all duration-300"
+                  >
+                    Learn More <PiCaretDoubleRightBold />
+                  </button>
                 </div>
-                <button
-                  onClick={() => handleSelectServiceToShowDetail(service)}
-                  className="desc mt-1 flex items-center gap-3 text-white group-hover:underline  underline-offset-4 transition-all duration-300"
-                >
-                  Learn More <PiCaretDoubleRightBold />
-                </button>
               </div>
             </div>
           ))}
