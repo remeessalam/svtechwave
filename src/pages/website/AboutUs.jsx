@@ -49,10 +49,16 @@ const AboutUs = () => {
           <div className="min-h-screen  py-20 px-4 sm:px-6 lg:px-8">
             <div className="wrapper">
               <div className="text-center mb-16">
-                <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                <h2
+                  data-aos="fade-up"
+                  className="text-4xl md:text-5xl font-bold text-gray-900 mb-4"
+                >
                   Transforming Ideas into Intelligence
                 </h2>
-                <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                <p
+                  data-aos="fade-up"
+                  className="text-xl text-gray-600 max-w-3xl mx-auto"
+                >
                   Discover how our AI solutions can revolutionize your business
                   with cutting-edge technology and innovative approaches.
                 </p>
@@ -60,27 +66,29 @@ const AboutUs = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {features.map((feature, index) => (
-                  <div
-                    key={index}
-                    className="group bg-primary hover:bg-primary/40 relative  rounded-2xl shadow-lg p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 overflow-hidden"
-                  >
-                    <div className="absolute inset-0 bg-gradient-to-r from-purple-500/5 to-indigo-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div data-aos="fade-up" key={index} className="h-full">
+                    <div
+                      key={index}
+                      className="group bg-primary h-full hover:bg-primary/40 relative  rounded-2xl shadow-lg p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 overflow-hidden"
+                    >
+                      <div className="absolute inset-0 bg-gradient-to-r from-purple-500/5 to-indigo-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-                    <div className="relative z-10 ">
-                      <span className="text-4xl mb-6 block">
-                        {feature.icon}
-                      </span>
+                      <div className="relative z-10 ">
+                        <span className="text-4xl mb-6 block">
+                          {feature.icon}
+                        </span>
 
-                      <h3 className="text-xl font-semibold group-hover:text-gray-900 text-gray-100 mb-4">
-                        {feature.title}
-                      </h3>
+                        <h3 className="text-xl font-semibold group-hover:text-gray-900 text-gray-100 mb-4">
+                          {feature.title}
+                        </h3>
 
-                      <p className="text-gray-200 group-hover:text-gray-900 leading-relaxed">
-                        {feature.description}
-                      </p>
+                        <p className="text-gray-200 group-hover:text-gray-900 leading-relaxed">
+                          {feature.description}
+                        </p>
+                      </div>
+
+                      <div className="absolute bottom-0 left-0 h-1 w-0 bg-gradient-to-r from-purple-500 to-indigo-500 transition-all duration-300 group-hover:w-full" />
                     </div>
-
-                    <div className="absolute bottom-0 left-0 h-1 w-0 bg-gradient-to-r from-purple-500 to-indigo-500 transition-all duration-300 group-hover:w-full" />
                   </div>
                 ))}
               </div>
@@ -240,14 +248,13 @@ const AboutUs = () => {
 
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
               {whyChooseUsContent.map((feature, index) => (
-                <div
-                  key={index}
-                  className="p-6 hover:scale-105 transition-all duration-300 bg-primary rounded-lg border border-gray-200 hover:border-slate-500 "
-                >
-                  <h3 className="text-xl font-semibold text-white mb-3">
-                    {feature.title}
-                  </h3>
-                  <p className="text-white leading-relaxed">{feature.desc}</p>
+                <div key={index} data-aos="fade-up" className="h-full">
+                  <div className="p-6 h-full hover:scale-105 transition-all duration-300 bg-primary rounded-lg border border-gray-200 hover:border-slate-500 ">
+                    <h3 className="text-xl font-semibold text-white mb-3">
+                      {feature.title}
+                    </h3>
+                    <p className="text-white leading-relaxed">{feature.desc}</p>
+                  </div>
                 </div>
               ))}
             </div>
