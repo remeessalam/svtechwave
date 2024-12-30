@@ -35,7 +35,8 @@ const Contact = () => {
 
     // Construct the request payload
     var payload = {
-      // to: companyDetails.email,
+      // to: "remeesreme4u@gmail.com",
+      to: companyDetails.email,
       subject: values.subject,
       body: emailBody,
     };

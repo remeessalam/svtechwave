@@ -47,7 +47,7 @@ export const LandingPage = ({ page }) => {
             <h1 className="font-raleway text-[2rem] md:text-7xl font-bold leading-tight text-white">
               {isWebDevelopment
                 ? "Creating Websites that Grow with Your Business"
-                : "Igniting innovation through artificial intelligence, apps and mores"}
+                : "Igniting innovation through artificial intelligence, apps and more"}
             </h1>
             <p className="text-white/90 desc">
               We specialize in delivering cutting-edge IT solutions tailored to

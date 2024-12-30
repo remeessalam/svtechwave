@@ -38,7 +38,7 @@ const ContactForm = () => {
 
     // Construct the request payload
     var payload = {
-      // to: companyDetails.email,
+      to: companyDetails.email,
       subject: "New Contact Form Submission - SV TECH WAVE",
       body: emailBody,
     };

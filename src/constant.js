@@ -84,7 +84,7 @@ export const companyDetails = {
   phone: "+91-9505066888",
   whatsapp: "+91-9505066888",
   email: "info@svtechwave.com",
-  address: "Andra Pradesh,IN.",
+  address: "#3-72-1,FIRST FLOOR,DGB STREET,KKD,ANDHRAPRADESH,IN",
   twitter: "",
   linkedin: "",
   instagram: "",
