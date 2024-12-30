@@ -41,13 +41,13 @@ const LandingHeader = () => {
       <div className="w-[95%] py-4 mx-auto bg-primary/40 border-b border-x border-slate-500 backdrop-blur-md rounded-b-2xl ">
         <div className="wrapper flex justify-between items-center gap-10">
           <div className="flex justify-between items-center gap-20 w-full pl-[1rem] lg:pl-0">
-            <a href="/" className="cursor-pointer">
+            <Link smooth={true} to="banner" className="cursor-pointer">
               <img
                 src={logoImg}
                 className="h-[3rem] md:h-[3.75rem] scale-125"
                 alt="logo"
               />
-            </a>
+            </Link>
             <div className="lg:flex items-center gap-10 hidden">
               {options.map((option) =>
                 option.name === "Home" ? (
