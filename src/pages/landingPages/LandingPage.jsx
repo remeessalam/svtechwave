@@ -32,7 +32,7 @@ export const LandingPage = ({ page }) => {
       <div id="banner" className="h-screen relative bg-backgroundcolor">
         <img
           src={isWebDevelopment ? webDevBanner : appDevBanner}
-          className="w-full h-full object-cover object-center absolute"
+          className="w-full h-full object-cover object-top absolute"
           alt=""
         />
         <div className="bg-black/30 absolute w-full h-full"></div>
