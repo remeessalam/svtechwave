@@ -27,7 +27,7 @@ const OurServices = ({ length }) => {
           Advanced and Highly Reliable Performance
         </h2>
         <p data-aos="fade-up" className="desc max-w-[50rem]">
-          Our success is your success and together we help our society to become
+          Your success is our success and together we help our society to become
           a better place to live and work.
         </p>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 mt-3">
@@ -78,18 +78,19 @@ const OurServices = ({ length }) => {
         open={isOpen}
         onClose={() => setIsOpen(false)}
         direction="top"
-        className="p-4 z-10 w-screen"
+        className=" z-10 w-screen !bg-white"
         lockBackgroundScroll
+        style={{ backgroundColor: "white" }}
       >
-        <div className="mb-3 flex items-center justify-end pr-[.7rem] py-[.4rem]">
+        <div className="  flex items-center justify-end pr-[.7rem] py-[.4rem] bg-white">
           <button
             onClick={() => setIsOpen(false)}
-            className="text-white text-[2.2rem]"
+            className="text-black text-[2.2rem]"
           >
             <IoMdClose />
           </button>
         </div>
-        <div className="flex flex-col gap-6 tex-white pb-[2rem]">
+        <div className="flex flex-col gap-6 tex-white pb-[2rem] bg-white p-4">
           <div>
             <img
               src={selectedService.img}
@@ -97,8 +98,8 @@ const OurServices = ({ length }) => {
               className=" max-h-[30rem] mx-auto rounded-xl"
             />
           </div>
-          <h1 className="heading-2 text-white">{selectedService.title}</h1>
-          <p className="desc whitespace-pre-line !text-white">
+          <h1 className="heading-2 text-primary">{selectedService.title}</h1>
+          <p className="desc whitespace-pre-line !text-black/80">
             {selectedService.detailContent}
           </p>
         </div>

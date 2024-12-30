@@ -5,15 +5,11 @@ import { Link } from "react-router-dom";
 
 const WebsiteFooter = () => {
   return (
-    <div className="py-14 bg-gradient-to-r from-primary/30 to-secondary/30">
+    <div className="py-14 bg-gradient-to-r from-primary to-primary/50">
       <div className="wrapper text-white">
         <div className="flex md:flex-row flex-col justify-between gap-10">
           <div className="flex flex-col items-center">
             <img src={logoImg} className="h-[6rem]" alt="" />
-            <p className="desc md:max-w-[15rem] text-sm text-center">
-              We have rapidly grown into a trusted partner for organizations
-              seeking digital transformation, enhanced operational efficiency.
-            </p>
           </div>
           <div className="flex md:flex-row flex-col gap-10">
             <div className="flex flex-col gap-2">
@@ -48,14 +44,14 @@ const WebsiteFooter = () => {
             </div>
           </div>
         </div>
-        <div className="pt-4 mt-7 border-t text-white/90 border-primary w-full">
+        <div className="pt-4 mt-7 border-t text-white/90 border-white w-full">
           <div className="flex justify-center gap-5 w-full">
             <div className="flex gap-5 items-center mt-5">
               <Link
                 to={companyDetails.facebook}
                 rel="noopener noreferrer"
                 target="_blank"
-                className="group border-primary border p-3 rounded-full"
+                className="group border-white border p-3 rounded-full"
               >
                 <BsFacebook className="text-xl text-white/90 group-hover:text-primary transition-all duration-300" />
               </Link>
@@ -63,7 +59,7 @@ const WebsiteFooter = () => {
                 to={companyDetails.twitter}
                 rel="noopener noreferrer"
                 target="_blank"
-                className="group border-primary border p-3 rounded-full"
+                className="group border-white border p-3 rounded-full"
               >
                 <BsTwitter className="text-xl text-white/90 group-hover:text-primary transition-all duration-300" />
               </Link>
@@ -71,7 +67,7 @@ const WebsiteFooter = () => {
                 to={companyDetails.linkedin}
                 rel="noopener noreferrer"
                 target="_blank"
-                className="group border-primary border p-3 rounded-full"
+                className="group border-white border p-3 rounded-full"
               >
                 <BsLinkedin className="text-xl text-white/90 group-hover:text-primary transition-all duration-300" />
               </Link>
@@ -79,7 +75,7 @@ const WebsiteFooter = () => {
                 to={companyDetails.instagram}
                 rel="noopener noreferrer"
                 target="_blank"
-                className="group border-primary border p-3 rounded-full"
+                className="group border-white border p-3 rounded-full"
               >
                 <BsInstagram className="text-xl text-white/90 group-hover:text-primary transition-all duration-300" />
               </Link>
