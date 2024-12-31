@@ -20,7 +20,7 @@ const Portfolio = ({ page }) => {
                 <img
                   src={item.img}
                   alt=""
-                  className="w-fit h-fit object-contain group-hover:scale-110 transition-all duration-300"
+                  className="w-fit  object-contain group-hover:scale-110 transition-all duration-300"
                 />
                 <div className="absolute bottom-0 left-0 w-full p-2 bg-primary/80 text-white flex flex-col gap-2">
                   <h3 className="font-medium text-center">{item.title}</h3>

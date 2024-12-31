@@ -112,7 +112,7 @@ const Home = () => {
           data-aos="fade-up"
           className="wrapper text-center flex flex-col gap-3"
         >
-          <div className="gradient-rounded-text-box mx-auto mb-4">
+          <div className="gradient-rounded-text-box mx-auto mb-4 !text-white">
             Who We Are
           </div>
           <h1 className="heading-2  max-w-[50rem] mx-auto text-white bg-clip-text text-transparent">

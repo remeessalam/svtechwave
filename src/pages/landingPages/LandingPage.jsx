@@ -134,7 +134,7 @@ export const LandingPage = ({ page }) => {
         <div className="wrapper text-center flex flex-col gap-3">
           <div
             data-aos="fade-up"
-            className="gradient-rounded-text-box mx-auto mb-4"
+            className="gradient-rounded-text-box mx-auto mb-4 !text-white"
           >
             Our Solutions
           </div>
