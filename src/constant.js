@@ -44,6 +44,14 @@ import custom1 from "./assets/images/services/custome.jpg";
 import data from "./assets/images/services/data.png";
 import data1 from "./assets/images/services/data.jpg";
 import { lazy } from "react";
+import {
+  FaApple,
+  FaBitcoin,
+  FaFigma,
+  FaGamepad,
+  FaGlobe,
+  FaGooglePlay,
+} from "react-icons/fa";
 const Home = lazy(() => import("./pages/website/Home"));
 const Services = lazy(() => import("./pages/website/Services"));
 const ContactUs = lazy(() => import("./pages/website/ContactUs"));
@@ -470,5 +478,208 @@ export const features = [
     description:
       "Round-the-clock support from our team of AI experts, ensuring your systems run smoothly at all times.",
     icon: "💡",
+  },
+];
+
+export const appportfolio = [
+  {
+    id: 1,
+    name: "Barbera App",
+    url: "https://play.google.com/store/apps/details?id=app.barbera.io",
+    icon: <FaGooglePlay />,
+  },
+  {
+    id: 2,
+    name: "Rentop",
+    url: "https://play.google.com/store/apps/details?id=com.rentop",
+    icon: <FaGooglePlay />,
+  },
+  {
+    id: 3,
+    name: "Bin Info Club",
+    url: "https://play.google.com/store/apps/details?id=com.binfoclub.app",
+    icon: <FaGooglePlay />,
+  },
+  {
+    id: 4,
+    name: "Prayer Times",
+    url: "https://play.google.com/store/apps/details?id=com.iccbrossard.prayerBmes",
+    icon: <FaGooglePlay />,
+  },
+  {
+    id: 5,
+    name: "Evans Francis",
+    url: "https://play.google.com/store/apps/details?id=com.chrisBanappdevelopers.evansfrancis",
+    icon: <FaGooglePlay />,
+  },
+  {
+    id: 6,
+    name: "HOD App",
+    url: "https://play.google.com/store/apps/details?id=com.chrisBanappdevelopers.hod",
+    icon: <FaGooglePlay />,
+  },
+  {
+    id: 7,
+    name: "Zigna AutoSnap",
+    url: "https://play.google.com/store/apps/details?id=com.Zigna.AutoSnap",
+    icon: <FaGooglePlay />,
+  },
+  {
+    id: 8,
+    name: "Klikomics",
+    url: "https://play.google.com/store/apps/details?id=com.klikomics.android",
+    icon: <FaGooglePlay />,
+  },
+  {
+    id: 9,
+    name: "Ocxee",
+    url: "https://apps.apple.com/in/app/ocxee/id1522856353",
+    icon: <FaApple />,
+  },
+  {
+    id: 10,
+    name: "Dubai Travel Guide",
+    url: "https://play.google.com/store/apps/details?id=com.eBps.dubai.travel.guide",
+    icon: <FaGooglePlay />,
+  },
+];
+
+// Website Development - Custom
+export const webportfolio = [
+  {
+    id: 1,
+    name: "Leader Bridge",
+    url: "https://www.leaderbridge.com",
+    icon: <FaGlobe />,
+  },
+  {
+    id: 2,
+    name: "Autopilot",
+    url: "https://autopilot.io",
+    icon: <FaGlobe />,
+  },
+  {
+    id: 3,
+    name: "Gigzio",
+    url: "https://gigzio.com",
+    icon: <FaGlobe />,
+  },
+  {
+    id: 4,
+    name: "FE Group",
+    url: "https://fe.group",
+    icon: <FaGlobe />,
+  },
+  {
+    id: 5,
+    name: "Vtalkz",
+    url: "https://vtalkz.com",
+    icon: <FaGlobe />,
+  },
+];
+export const wordportfolio = [
+  {
+    id: 6,
+    name: "Think Realty",
+    url: "https://thinkrealty.ae",
+    icon: <FaGlobe />,
+  },
+  {
+    id: 7,
+    name: "Bayut",
+    url: "https://www.bayut.com",
+    icon: <FaGlobe />,
+  },
+  {
+    id: 8,
+    name: "5G High-Speed Internet",
+    url: "https://5ghighspeedinternet.co",
+    icon: <FaGlobe />,
+  },
+  {
+    id: 9,
+    name: "Messina's Catering",
+    url: "https://messinascatering.com",
+    icon: <FaGlobe />,
+  },
+  {
+    id: 10,
+    name: "Cold Creek Capital",
+    url: "https://www.coldcreekcap.com",
+    icon: <FaGlobe />,
+  },
+];
+export const uiuxportfolio = [
+  {
+    id: 1,
+    name: "Crypto UI",
+    url: "https://www.figma.com/design/syARcSBYKhwEzsEmlpB2jR/Crypto-UI-App-%26-Admin?node-id=0-1&t=qrubmjqZL7GxJUk2-0",
+    icon: <FaFigma />,
+  },
+  {
+    id: 2,
+    name: "Emergence Music",
+    url: "https://www.figma.com/proto/GwlIMQuIuFevhOEp8moALy/emergence-music-distribuBon?page-id=6298%3A7215&type=design&node-id=6298-7776&viewport=407%2C314%2C0.11&t=QCtz7M4USn6gI1CG-1&scaling=min-zoom",
+    icon: <FaFigma />,
+  },
+  {
+    id: 3,
+    name: "Potea",
+    url: "https://www.figma.com/design/ZoowfS1VMFLRKKcsdd3Myh/Potea-(Copy)?node-id=727-25421&t=KThAYD7OOdc4oeEV-1",
+    icon: <FaFigma />,
+  },
+  {
+    id: 4,
+    name: "TGFX Workfile",
+    url: "https://www.figma.com/design/Xtua9ElE5Eg7MV7baS6Bzn/TGFX-Workfile-(Copy)?t=JDLWFCCc24GDqh1T-0",
+    icon: <FaFigma />,
+  },
+];
+export const gameportfolio = [
+  // Game Development
+  {
+    id: 31,
+    name: "Car Stunt Mania",
+    url: "https://play.google.com/store/apps/details?id=com.carstuntgames.carstunt.racingcar.carstuntmania.mlabs",
+    category: "Game Development",
+    icon: <FaGamepad />,
+  },
+  {
+    id: 32,
+    name: "Bowling Games",
+    url: "https://play.google.com/store/apps/details?id=com.bowlinggames.oﬄinebowlinggame.bowlingoﬄine.bowlinggame.mlabs",
+    category: "Game Development",
+    icon: <FaGamepad />,
+  },
+];
+export const blockchainportfolio = [
+  // Blockchain
+  {
+    id: 41,
+    name: "CryptoPadie",
+    url: "https://play.google.com/store/apps/details?id=com.cryptopadie.buy.sell.crypto",
+    category: "Blockchain",
+    icon: <FaBitcoin />,
+  },
+  {
+    id: 42,
+    name: "Nanfolo",
+    url: "https://play.google.com/store/apps/details?id=com.nanfolo.user.app",
+    category: "Blockchain",
+    icon: <FaBitcoin />,
+  },
+  {
+    id: 43,
+    name: "Nanfolo Website",
+    url: "https://nanfolo.com",
+    category: "Blockchain",
+    icon: <FaBitcoin />,
+  },
+  {
+    id: 44,
+    name: "Padiepal Website",
+    url: "h$ps://padiepal.com",
+    category: "Blockchain",
+    icon: <FaBitcoin />,
   },
 ];

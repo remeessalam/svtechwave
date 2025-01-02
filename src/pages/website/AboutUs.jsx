@@ -12,6 +12,7 @@ import {
 import UnlockEfficiency from "../../components/common/UnlockEfficiency";
 import OurServices from "../../components/website/OurServices";
 import Testimonials from "../../components/common/Testimonials";
+import OurWorks from "../../components/OurWorks";
 
 const AboutUs = () => {
   return (
@@ -262,6 +263,7 @@ const AboutUs = () => {
         </div>
       </div>
       <OurServices length={6} />
+      <OurWorks />
       <Testimonials />
     </>
   );
