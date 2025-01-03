@@ -123,7 +123,7 @@ export const routes = [
   },
   {
     name: "Blogs",
-    path: "#",
+    path: "https://svtechwave.blogspot.com/2024/12/Explore-How-SV%20TechWave-Can-Help-Integrate-AI-Solutions-into-Your-Business.html?m=1",
     // component: <ContactUs />,
   },
 ];
