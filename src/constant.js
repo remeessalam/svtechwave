@@ -95,7 +95,8 @@ export const companyDetails = {
   address: "#3-72-1,FIRST FLOOR,DGB STREET,KKD,ANDHRAPRADESH,IN",
   twitter: "https://x.com/svtechwave?s=11",
   linkedin: "https://www.linkedin.com/company/sv-techwave/",
-  instagram: "",
+  instagram:
+    "https://www.instagram.com/sv_techwave?utm_source=qr&igsh=MXBqYzNtajB5b2pkNw==",
   whatsapplink: "https://wa.me/message/AXVFTIFOAN7SC1",
   facebook: "https://www.facebook.com/share/15deTefCas/",
 };
