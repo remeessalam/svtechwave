@@ -4,7 +4,13 @@ import { FaPhone } from "react-icons/fa";
 import { companyDetails } from "../../constant";
 import { IoMail } from "react-icons/io5";
 import { FaLocationDot } from "react-icons/fa6";
-import { BsFacebook, BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
+import {
+  BsFacebook,
+  BsInstagram,
+  BsLinkedin,
+  BsTwitter,
+  BsWhatsapp,
+} from "react-icons/bs";
 import toast from "react-hot-toast";
 import { SpinnerContext } from "../SpinnerContext";
 import { useForm } from "react-hook-form";
@@ -235,12 +241,12 @@ const ContactForm = () => {
               <BsLinkedin className="text-xl  group-hover:text-primary transition-all duration-300" />
             </Link>
             <Link
-              to={companyDetails.instagram}
+              to={companyDetails.whatsapplink}
               rel="noopener noreferrer"
               target="_blank"
               className="group w-[2.5rem] h-[2.5rem] rounded-full border-primary border flex justify-center items-center"
             >
-              <BsInstagram className="text-xl  group-hover:text-primary transition-all duration-300" />
+              <BsWhatsapp className="text-xl  group-hover:text-primary transition-all duration-300" />
             </Link>
           </div>
         </div>

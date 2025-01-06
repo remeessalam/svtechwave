@@ -1,5 +1,11 @@
 import React from "react";
-import { BsFacebook, BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
+import {
+  BsFacebook,
+  BsInstagram,
+  BsLinkedin,
+  BsTwitter,
+  BsWhatsapp,
+} from "react-icons/bs";
 import { companyDetails, logoImg, routes } from "../../constant";
 import { Link } from "react-router-dom";
 
@@ -72,12 +78,12 @@ const WebsiteFooter = () => {
                 <BsLinkedin className="text-xl text-white/90 group-hover:text-primary transition-all duration-300" />
               </Link>
               <Link
-                to={companyDetails.instagram}
+                to={companyDetails.whatsapplink}
                 rel="noopener noreferrer"
                 target="_blank"
                 className="group border-white border p-3 rounded-full"
               >
-                <BsInstagram className="text-xl text-white/90 group-hover:text-primary transition-all duration-300" />
+                <BsWhatsapp className="text-xl text-white/90 hover:text-primary/90 transition-all duration-300" />
               </Link>
             </div>
           </div>

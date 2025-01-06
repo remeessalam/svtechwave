@@ -93,10 +93,11 @@ export const companyDetails = {
   whatsapp: "+91-9505066888",
   email: "info@svtechwave.com",
   address: "#3-72-1,FIRST FLOOR,DGB STREET,KKD,ANDHRAPRADESH,IN",
-  twitter: "",
-  linkedin: "",
+  twitter: "https://x.com/svtechwave?s=11",
+  linkedin: "https://www.linkedin.com/company/sv-techwave/",
   instagram: "",
-  facebook: "",
+  whatsapplink: "https://wa.me/message/AXVFTIFOAN7SC1",
+  facebook: "https://www.facebook.com/share/15deTefCas/",
 };
 
 // website routes
