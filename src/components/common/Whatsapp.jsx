@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-// import { ReactComponent as WhatsApp } from "../assets/svgs/WhatsappIcon.svg";
-import whatsappIcon from "../../assets/svgs/WhatsappIcon.svg";
+import { ReactComponent as WhatsApp } from "../../assets/svgs/WhatsappIcon.svg";
+// import whatsappIcon from "../../assets/svgs/WhatsappIcon.svg";
 import { companyDetails } from "../../constant";
 // import { clientDetails } from "../contant";
 const WhatsAppIcon = () => {
@@ -14,13 +14,13 @@ const WhatsAppIcon = () => {
       rel="noopener noreferrer"
       aria-label="Contact us on WhatsApp"
     >
-      {/* <WhatsApp className="w-[3rem] h-[3rem] sm:w-[4rem] sm:h-[4rem] fill-green-500 group-hover:fill-primary group-hover:scale-110 rounded-full shadow-transparent shadow-large group-hover:shadow-primary/50 transition-all duration-300" /> */}
+      <WhatsApp className="w-[3rem] h-[3rem] sm:w-[4rem] sm:h-[4rem] fill-green-500 group-hover:fill-primary group-hover:scale-110 rounded-full shadow-transparent shadow-large group-hover:shadow-primary/50 transition-all duration-300" />
 
-      <img
+      {/* <img
         src={whatsappIcon}
         alt="WhatsApp Icon"
         className="w-[3rem] h-[3rem] sm:w-[4rem] sm:h-[4rem] fill-green-500 group-hover:fill-primary group-hover:scale-110 rounded-full shadow-transparent shadow-large group-hover:shadow-primary/50 transition-all duration-300"
-      />
+      /> */}
     </Link>
   );
 };

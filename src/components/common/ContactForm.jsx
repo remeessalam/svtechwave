@@ -248,14 +248,14 @@ const ContactForm = () => {
             >
               <BsInstagram className="text-xl  group-hover:text-primary transition-all duration-300" />
             </Link>
-            <Link
+            {/* <Link
               to={companyDetails.whatsapplink}
               rel="noopener noreferrer"
               target="_blank"
               className="group w-[2.5rem] h-[2.5rem] rounded-full border-primary border flex justify-center items-center"
             >
               <BsWhatsapp className="text-xl  group-hover:text-primary transition-all duration-300" />
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
