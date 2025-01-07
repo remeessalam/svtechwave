@@ -14,6 +14,7 @@ import SpinnerContextProvider, {
 } from "./components/SpinnerContext";
 import { Toaster } from "react-hot-toast";
 import ScrollToTop from "./components/common/ScrollToTop";
+import WhatsAppIcon from "./components/common/Whatsapp";
 const Thankyou = lazy(() => import("./pages/Thankyou"));
 
 AOS.init({
@@ -27,6 +28,7 @@ export default function App() {
       <Suspense fallback={<LoadingSpinner />}>
         <Toaster />
         <ScrollToTop />
+        <WhatsAppIcon />
         <Routes>
           {/* Website Pages */}
           {routes.map(({ component, name, path }, index) => (
