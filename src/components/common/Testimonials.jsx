@@ -1,7 +1,8 @@
 import React from "react";
 import { useKeenSlider } from "keen-slider/react";
 import profileImg1 from "../../assets/images/profileimg-1.png";
-import profileImg2 from "../../assets/images/profileimg-2.png";
+import profileImg2 from "../../assets/images/profileimg-1.jpg";
+// import profileImg2 from "../../assets/images/profileimg-2.png";
 import {
   IoArrowBackCircleOutline,
   IoArrowForwardCircleOutline,
@@ -14,7 +15,7 @@ const reviews = [
     desc: "SVTECHWAVE changed our business using its cut AI solution. Their team not only understood our needs, but also provided customized AI systems that significantly improved our customer experience and operational efficiency. The results speak for themselves – we saw significant increases in productivity and customer satisfaction.",
     name: "John Smith",
     role: "CEO, XYZ Company",
-    profileImg: profileImg1,
+    profileImg: profileImg2,
   },
   {
     id: 2,
@@ -30,7 +31,7 @@ const reviews = [
     desc: "The mobile application developed by SVTECHWAVE exceeded our expectations. Their team understood our goals and created an intuitive, feature-rich application that improved our customer engagement and streamlined operations. We have received great feedback from our users, and the app has become a key tool for our business.",
     name: "Mark Thompson",
     role: "Chief Technology Officer, Ecom Enterprises",
-    profileImg: profileImg1,
+    profileImg: profileImg2,
   },
   {
     id: 4,
@@ -62,7 +63,7 @@ const reviews = [
     desc: "The chatbot developed by SVTECHWAVE is a game changer for our customer service operations. It’s intuitive, responsive, and has helped reduce our customer service workload by efficiently handling common queries. Our customers love the immediate support it provides, and it has improved our overall service quality.",
     name: "Lucas Green",
     role: "Head of Customer Support, Retail Dynamics",
-    profileImg: profileImg1,
+    profileImg: profileImg2,
   },
   {
     id: 8,
@@ -70,7 +71,7 @@ const reviews = [
     desc: "The development service of SVTECHWAVE IoT allows us to introduce efficient intelligent system factory production systems. Integration of IoT sensors and data analysis has led to greater operating efficiency, real-time monitoring and expected maintenance functions. This is a huge leap forward for our company.",
     name: "Carlos Sanchez",
     role: "Operations Manager, Smart Manufacturing Co.",
-    profileImg: profileImg1,
+    profileImg: profileImg2,
   },
   {
     id: 9,
