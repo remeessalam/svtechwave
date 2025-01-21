@@ -433,11 +433,11 @@ export const appPortfolio = [
     img: require("./assets/images/app_projects/2.webp"),
     title: "Find A Driver",
   },
-  {
-    id: 3,
-    img: require("./assets/images/app_projects/3.webp"),
-    title: "Glowsy",
-  },
+  // {
+  //   id: 3,
+  //   img: require("./assets/images/app_projects/3.webp"),
+  //   title: "Glowsy",
+  // },
   {
     id: 4,
     img: require("./assets/images/app_projects/4.webp"),
