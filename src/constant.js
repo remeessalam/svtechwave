@@ -387,31 +387,37 @@ export const webPortfolio = [
     id: 1,
     img: require("./assets/images/web_projects/1.webp"),
     title: "FE-Finance",
+    link: "https://www.fe-finance.de",
   },
   {
     id: 2,
     img: require("./assets/images/web_projects/2.webp"),
     title: "Ocxee",
+    link: "https://www.ocxee.com/",
   },
   {
     id: 3,
     img: require("./assets/images/web_projects/3.webp"),
     title: "Leaderbridge",
+    link: "https://www.leadership.net/",
   },
   {
     id: 4,
     img: require("./assets/images/web_projects/4.webp"),
     title: "Gigzio",
+    link: "https://gigzio.com/",
   },
   {
     id: 5,
     img: require("./assets/images/web_projects/5.webp"),
     title: "FE Group",
+    link: "https://www.fe.group/",
   },
   {
     id: 6,
     img: require("./assets/images/web_projects/6.webp"),
     title: "V Talkz",
+    link: "https://www.vtalkz.com/",
   },
 ];
 
@@ -487,49 +493,49 @@ export const appportfolio = [
   {
     id: 1,
     name: "Barbera App",
-    url: "https://play.google.com/store/apps/details?id=app.barbera.io",
+    url: "https://play.google.com/store/apps/details?id=app.barbera.io&pcampaignid=web_share",
     icon: <FaGooglePlay />,
   },
   {
     id: 2,
     name: "Rentop",
-    url: "https://play.google.com/store/apps/details?id=com.rentop",
+    url: "https://play.google.com/store/apps/details?id=com.rentop&pcampaignid=web_share",
     icon: <FaGooglePlay />,
   },
   {
     id: 3,
     name: "Bin Info Club",
-    url: "https://play.google.com/store/apps/details?id=com.binfoclub.app",
+    url: "https://play.google.com/store/apps/details?id=com.binfoclub.app&pcampaignid=web_share",
     icon: <FaGooglePlay />,
   },
   {
     id: 4,
     name: "Prayer Times",
-    url: "https://play.google.com/store/apps/details?id=com.iccbrossard.prayerBmes",
+    url: "https://play.google.com/store/apps/details?id=com.iccbrossard.prayerBmes&pcampaignid=web_share",
     icon: <FaGooglePlay />,
   },
   {
     id: 5,
     name: "Evans Francis",
-    url: "https://play.google.com/store/apps/details?id=com.chrisBanappdevelopers.evansfrancis",
+    url: "https://play.google.com/store/apps/details?id=com.chrisBanappdevelopers.evansfrancis&pcampaignid=web_share",
     icon: <FaGooglePlay />,
   },
   {
     id: 6,
     name: "HOD App",
-    url: "https://play.google.com/store/apps/details?id=com.chrisBanappdevelopers.hod",
+    url: "https://play.google.com/store/apps/details?id=com.chrisBanappdevelopers.hod&pcampaignid=web_share",
     icon: <FaGooglePlay />,
   },
   {
     id: 7,
     name: "Zigna AutoSnap",
-    url: "https://play.google.com/store/apps/details?id=com.Zigna.AutoSnap",
+    url: "https://play.google.com/store/apps/details?id=com.Zigna.AutoSnap&pcampaignid=web_share",
     icon: <FaGooglePlay />,
   },
   {
     id: 8,
     name: "Klikomics",
-    url: "https://play.google.com/store/apps/details?id=com.klikomics.android",
+    url: "https:play.google.com/store/apps/details?id=com.klikomics.android&pcampaignid=web_share",
     icon: <FaGooglePlay />,
   },
   {
@@ -541,8 +547,62 @@ export const appportfolio = [
   {
     id: 10,
     name: "Dubai Travel Guide",
-    url: "https://play.google.com/store/apps/details?id=com.eBps.dubai.travel.guide",
+    url: "https://play.google.com/store/apps/details?id=com.eBps.dubai.travel.guide&pcampaignid=web_share",
     icon: <FaGooglePlay />,
+  },
+  {
+    id: 11,
+    name: "EVA People App",
+    url: "https://apps.apple.com/eg/app/eva-people-app/id1551622445",
+    icon: <FaApple />,
+  },
+  {
+    id: 12,
+    name: "Lafi Android",
+    url: "https://play.google.com/store/apps/details?id=com.lundev.mayar&pcampaignid=web_share",
+    icon: <FaGooglePlay />,
+  },
+  {
+    id: 13,
+    name: "Lafi iOS",
+    url: "https://apps.apple.com/eg/app/lafi-%D9%84%D8%A7%D9%81%D9%8A/id6505079679",
+    icon: <FaApple />,
+  },
+  {
+    id: 14,
+    name: "Naseh Android",
+    url: "https://play.google.com/store/apps/details?id=com.lun.nasooh.NASE7",
+    icon: <FaGooglePlay />,
+  },
+  {
+    id: 15,
+    name: "Naseh IOS",
+    url: "https://apps.apple.com/eg/app/%D9%86%D8%A7%D8%B5%D8%AD/id6475194728",
+    icon: <FaApple />,
+  },
+  {
+    id: 16,
+    name: "Hayaty Android",
+    url: "https://play.google.com/store/apps/details?id=com.intixel.hayaty",
+    icon: <FaGooglePlay />,
+  },
+  {
+    id: 17,
+    name: "Hayaty IOS",
+    url: "https://apps.apple.com/eg/app/hayaty/id6451443065",
+    icon: <FaApple />,
+  },
+  {
+    id: 18,
+    name: "EVA Internships Android",
+    url: "https://play.google.com/store/apps/details?id=com.eva.eva_training_certificates&hl=en",
+    icon: <FaGooglePlay />,
+  },
+  {
+    id: 19,
+    name: "EVA Internships IOS",
+    url: "https://apps.apple.com/eg/app/eva-internships/id1528819204",
+    icon: <FaApple />,
   },
 ];
 
@@ -576,6 +636,12 @@ export const webportfolio = [
     id: 5,
     name: "Vtalkz",
     url: "https://vtalkz.com",
+    icon: <FaGlobe />,
+  },
+  {
+    id: 6,
+    name: "The Ladders",
+    url: "https://www.theladders.com",
     icon: <FaGlobe />,
   },
 ];
