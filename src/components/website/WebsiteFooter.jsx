@@ -85,6 +85,14 @@ const WebsiteFooter = () => {
               >
                 <BsInstagram className="text-xl text-white/90 hover:text-primary/90 transition-all duration-300" />
               </Link>
+              <Link
+                to={companyDetails.whatsapplink}
+                rel="noopener noreferrer"
+                target="_blank"
+                className="group border-white border p-3 rounded-full"
+              >
+                <BsWhatsapp className="text-xl text-white/90 hover:text-primary/90 transition-all duration-300" />
+              </Link>
               {/* <Link
                 to={companyDetails.whatsapplink}
                 rel="noopener noreferrer"

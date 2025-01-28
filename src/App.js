@@ -28,7 +28,7 @@ export default function App() {
       <Suspense fallback={<LoadingSpinner />}>
         <Toaster />
         <ScrollToTop />
-        <WhatsAppIcon />
+        {/* <WhatsAppIcon /> */}
         <Routes>
           {/* Website Pages */}
           {routes.map(({ component, name, path }, index) => (
