@@ -10,7 +10,6 @@ import { HelmetProvider } from "react-helmet-async";
 import GoogleTracking from "./components/GoogleTracking";
 // import GoogleTags from "./components/GoogleTag";
 // import GoogleTagManager from "./components/GoogleTagManager";
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
